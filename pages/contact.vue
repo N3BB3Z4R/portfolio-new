@@ -1,10 +1,7 @@
 <template>
-  <div>
+  <div class="container">
     <div>
-      <!-- <Header /> -->
-      <Container msg="ABOUT ME"/>
-      <!-- <Contact /> -->
-      <!-- <Footer /> -->
+      <Contact />
     </div>
   </div>
 </template>
@@ -14,6 +11,14 @@ export default {}
 </script>
 
 <style>
+.container {
+  margin: 0 auto;
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 .title {
   font-family:

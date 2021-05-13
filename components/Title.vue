@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <h1 class="title">Oscar 'Nebe' Abad</h1>
-    <h2 class="subtitle">I'm Audiovisual Generalist Creative Artist.</h2>
-  </div>
+  <NuxtLink class="linkhome" to="/">
+    <div>    
+      <h1 class="title">Oscar 'Nebe' Abad</h1>
+      <h2 class="subtitle">I'm Audiovisual Generalist Creative Artist.</h2>
+    </div>
+  </NuxtLink>
 </template>
 
 <script>
@@ -18,5 +20,16 @@ export default {
 <style scoped>
   h1 {
     text-shadow: 0px 70px 60px var(--secondary);
+  }
+  .linkhome {
+    text-decoration: none;
+  }
+  .linkhome:hover * {
+    transform: scale(1.02);
+    transition: 200ms;
+  }
+  .linkhome:not(:hover) * {
+    transform: scale(1);
+    transition: 800ms;
   }
 </style>

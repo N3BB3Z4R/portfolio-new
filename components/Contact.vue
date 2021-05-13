@@ -33,6 +33,10 @@ export default {
   border: 1px solid var(--primary);
   background-color: var(--secondary);
 }
+.contact input:hover, .contact textarea:hover {
+  box-shadow: 0 0 10px var(--secondary);
+  transition: 200ms;
+}
 h3 {
   margin: 40px 0 0;
 }

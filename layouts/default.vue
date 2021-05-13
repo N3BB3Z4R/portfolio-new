@@ -1,6 +1,8 @@
 <template>
-  <div>
+  <div class="centered">
+    <Header />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
@@ -42,4 +44,13 @@
   color: #fff;
   background-color: #35495e;
 }
+
+.centered {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
 </style>

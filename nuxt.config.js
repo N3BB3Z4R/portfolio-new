@@ -11,7 +11,8 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel:"stylesheet", type:"text/css", href: 'https://use.fontawesome.com/releases/v5.15.3/css/all.css' }
     ]
   },
 
@@ -20,7 +21,7 @@ export default {
         // Load a Node.js module directly (here it's a Sass file)
         // 'purecss',
         // CSS file in the project
-        '@/assets/global.css',
+        '@/styles/global.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
