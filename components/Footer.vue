@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <h4>{{ msg }}</h4>
-    <h5>Made with ❤️ in Vue & NuXT and handcrafted CSS</h5>
+    <h5>Made with ❤️ in Vue & NuXT and handcrafted CSS © 2021</h5>
     <!-- <div class="links">
       <a
         href="https://nuxtjs.org/"
@@ -37,7 +37,8 @@ export default {
 .footer {
   margin: 0px auto;
   padding: 20px auto;
-  border-top: 2px solid var(--gray);
+  border-top: 1px solid var(--gray);
+  color: var(--gray);
 }
 h4 {
   margin: 40px auto;

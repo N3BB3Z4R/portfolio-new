@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Logo />
+    <!-- <Logo /> -->
     <Title />
     <Navbar />
   </div>

@@ -1,9 +1,9 @@
 <template>
   <nav>
     <ul>
-      <li><a href="">HOME</a></li>
-      <li><a href="">WORKS</a></li>
-      <li><a href="">CONTACT</a></li>
+      <li><a href="">VIDEO PROD</a></li>
+      <li><a href="">3D DESIGN</a></li>
+      <li><a href="">FRONT END</a></li>
     </ul>
   </nav>
 </template>
@@ -46,9 +46,13 @@ a:hover {
   color: white;
   background-color: var(--primary);
   letter-spacing: 1rem;
+  padding: 10px 10px;
   animation: pulse 2s infinite;
+  font-weight: 600;
 }
-
+a:not(:hover) {
+  animation: release 1s;
+}
 @keyframes pulse {
 	0% {
 		transform: scale(0.95);
@@ -62,6 +66,19 @@ a:hover {
 
 	100% {
 		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+@keyframes release {
+	0% {
+		box-shadow: 0 0 0 0 var(--secondary);
+	}
+
+	70% {
+		box-shadow: 0 0 0 6px rgba(0, 0, 0, 0);
+	}
+
+	100% {
 		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 	}
 }

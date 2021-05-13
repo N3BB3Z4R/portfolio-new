@@ -2,8 +2,9 @@
   <div class="container">
     <div>
       <Header />
-      <Container msg="Home"/>
-      <Footer msg="Este es mi footer."/>
+      <Container msg="HOME"/>
+      <Contact />
+      <Footer />
     </div>
   </div>
 </template>

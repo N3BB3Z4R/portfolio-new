@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <h1 class="title">Oscar 'Nebe' Abad</h1>
-    <h2 class="subtitle">I'm Audiovisual Generalist Creative Artist.</h2>
-  </div>
+  <nav>
+      <a href=""></a>
+      <i class="fab fa-github-alt"></i>
+  </nav>
 </template>
 
 <script>
