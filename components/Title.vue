@@ -24,11 +24,13 @@ export default {
   .linkhome {
     text-decoration: none;
   }
-  .linkhome:hover * {
-    transform: scale(1.02);
+  .linkhome:hover h1, 
+  .linkhome:hover h2 {
+    transform: scale(0.95);
     transition: 200ms;
   }
-  .linkhome:not(:hover) * {
+  .linkhome:not(:hover) h1,
+  .linkhome:not(:hover) h2 {
     transform: scale(1);
     transition: 800ms;
   }
