@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <Header />
-      <Container msg="HOME"/>
+      <Container msg="ABOUT ME"/>
       <Contact />
       <Footer />
     </div>
