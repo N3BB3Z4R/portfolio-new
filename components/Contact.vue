@@ -37,6 +37,9 @@ export default {
   box-shadow: 0 0 10px var(--secondary);
   transition: 200ms;
 }
+.contact input:not(:hover), .contact textarea:not(:hover) {
+  transition: 500ms;
+}
 h3 {
   margin: 40px 0 0;
 }

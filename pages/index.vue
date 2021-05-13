@@ -31,6 +31,7 @@ export default {}
   font-size: 75px;
   color: var(--primary);
   letter-spacing: 1px;
+  margin-top: 40px;
 }
 
 .subtitle {
