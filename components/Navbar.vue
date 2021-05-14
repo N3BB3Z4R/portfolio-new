@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav id="nav" class="navbar is-transparent is-fixed-top">
     <ul>
       <li><NuxtLink class-active="active" to="/videovfx">VIDEO & VFX</NuxtLink></li>
       <li><NuxtLink class-active="active" to="/3ddesign">3D DESIGN</NuxtLink></li>
@@ -47,7 +47,8 @@ a {
   border: 1px solid var(--primary);
   letter-spacing: 0.3rem;
   transition: 500ms;
-  font-weight: normal;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 100;
 }
 a:hover {
   color: white;

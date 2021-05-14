@@ -26,6 +26,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+
 .footer {
   margin: 10px auto;
   padding: 20px auto;
@@ -34,6 +36,11 @@ export default {
 }
 h4 {
   margin: 40px auto;
+}
+h5 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 100;
+  font-size: 14px;
 }
 a {
   color: var(--primary);

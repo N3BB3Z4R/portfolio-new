@@ -18,12 +18,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
   h1 {
     text-shadow: 0px 0px 70px var(--secondary);
     animation: flashing 10s ease-in-out infinite;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Vollkorn', serif;
+    font-weight: 900;
   }
-  @import url('https://fonts.googleapis.com/css2?family=Goblin+One&family=Oswald:wght@200;400&display=swap');
 
   h2 {
     text-shadow: 0 0 20px white;
@@ -31,11 +32,10 @@ export default {
 
   .linkhome {
     text-decoration: none;
-    
   }
   .linkhome:hover h1, 
   .linkhome:hover h2 {
-    transform: scale(0.95);
+    transform: scale(0.97);
     transition: 200ms;
   }
   .linkhome:not(:hover) h1,
@@ -45,25 +45,25 @@ export default {
   }
 
   @keyframes flashing {
-    0% {
+    10% {
       filter: blur(0px);
     }
-    5% {
+    14% {
       filter: blur(4px);
     }
-    12% {
+    15% {
       filter: blur(3px);
     }
-    15% {
+    17% {
       filter: blur(1px);
     }
     18% {
       filter: blur(4px);
     }
-    20% {
+    19% {
       filter: blur(2px);
     }
-    30% {
+    22% {
       filter: blur(1px);
     }
     100% {
