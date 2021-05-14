@@ -2,7 +2,7 @@
   <div>
     <div>
       <!-- <Header /> -->
-      <Container msg="ABOUT ME"/>
+      <Container class="container" msg="ABOUT ME"/>
       <!-- <Contact /> -->
       <!-- <Footer /> -->
     </div>
@@ -14,6 +14,21 @@ export default {}
 </script>
 
 <style>
+
+.container {
+  animation: fade 0.4s ease-in-out;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .title {
   font-family:

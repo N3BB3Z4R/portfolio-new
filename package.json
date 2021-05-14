@@ -12,7 +12,8 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.6",
+    "vue-youtube-embed": "^2.2.2"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.1.3",

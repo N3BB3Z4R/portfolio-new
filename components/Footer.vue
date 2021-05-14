@@ -27,7 +27,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .footer {
-  margin: 0px auto;
+  margin: 10px auto;
   padding: 20px auto;
   /* border-top: 1px solid var(--gray); */
   color: var(--gray);
