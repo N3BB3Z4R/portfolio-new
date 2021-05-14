@@ -16,8 +16,16 @@ export default {}
 <style>
 
 .container {
+  margin: 0 auto;
+  /* min-height: 100vh; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   animation: fade 0.4s ease-in-out;
+  width:70%;
 }
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -39,6 +47,7 @@ export default {}
     'Segoe UI',
     Roboto,
     'Helvetica Neue',
+    Oswald,
     Arial,
     sans-serif;
   display: block;

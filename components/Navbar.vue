@@ -1,10 +1,10 @@
 <template>
   <nav>
     <ul>
-      <li><NuxtLink to="/videovfx">VIDEO & VFX</NuxtLink></li>
-      <li><NuxtLink to="/3ddesign">3D DESIGN</NuxtLink></li>
-      <li><NuxtLink to="/frontend">FRONT-END</NuxtLink></li>
-      <li><NuxtLink to="/contact">CONTACT</NuxtLink></li>
+      <li><NuxtLink class-active="active" to="/videovfx">VIDEO & VFX</NuxtLink></li>
+      <li><NuxtLink class-active="active" to="/3ddesign">3D DESIGN</NuxtLink></li>
+      <li><NuxtLink class-active="active" to="/frontend">FRONT-END</NuxtLink></li>
+      <li><NuxtLink class-active="active" to="/contact">CONTACT</NuxtLink></li>
     </ul>
   </nav>
 </template>
@@ -20,6 +20,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.nuxt-link-active {
+  background-color: var(--alter);
+  color: white;
+  text-shadow: 0 0 5px var(--secondary);
+}
 h3 {
   margin: 40px 0 0;
 }

@@ -45,6 +45,7 @@ export default {
 .main {
   padding: 30px 0;
   border-top: 0px solid var(--secondary);
+  display: block;
 }
 h3 {
   margin: 40px 0 0;
@@ -62,6 +63,6 @@ a {
 }
 p {
   margin: 10px auto;
-  width: 50%;
+  width: 100%;
 }
 </style>
