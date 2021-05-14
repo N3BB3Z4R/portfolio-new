@@ -23,10 +23,9 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## TO-DO
 * Works Timeline.
-* Skills Tag Cloud.
-* Programs Tag Cloud.
+* Skills/Languages/Studies/Programs Tag Cloud.
 * Contact Form backend.
-* Social Icons make links work.
+* Make Anchor position in Nav Buttons
 * Youtube Embedding native / or Vimeo embed - with autofit
 > https://www.npmjs.com/package/vue-youtube-embed
 * Faster animated sections content transitions

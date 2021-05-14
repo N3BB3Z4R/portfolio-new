@@ -12,18 +12,9 @@
 
 <script>
 export default {
-  transition(to, from) {
-    if (!from) {
-      return 'slide-left'
-    }
-    return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
-  }
+
 }
 </script>
 
 <style>
-p {
-    width: 70%;
-    margin: 20px auto;
-}
 </style>

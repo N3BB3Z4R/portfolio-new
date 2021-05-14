@@ -22,6 +22,8 @@ export default {
         // 'purecss',
         // CSS file in the project
         '@/styles/global.css',
+        '@/styles/palete.css',
+        '@/styles/animations.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

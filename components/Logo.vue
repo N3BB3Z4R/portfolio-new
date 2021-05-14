@@ -1,5 +1,7 @@
 <template>
-  <img class="Logo" src="https://www.nebeworks.com/user/themes/hola/images/logo/logo.png" alt="">
+  <NuxtLink class="linkhome" to="/">
+    <img class="Logo" src="./../assets/nebe.png" alt="Nebe Logo">
+  </NuxtLink>
 </template>
 
 <script>
@@ -12,15 +14,16 @@ export default {
 </script>
 
 <style>
-.Logo {
-  animation: 1s appear;
+.Logo, .Logo:visited {
+  z-index: -1;
   margin: 0px auto;
-  width: 400px;
+  margin-top: 10px;
+  /* position:absolute; */
+  width: 300px;
+  transition: 500ms;
+  animation: shake 12s ease-in-out infinite;
 }
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
+.Logo:hover {
+  animation: shake 2s ease-in-out infinite;
 }
 </style>

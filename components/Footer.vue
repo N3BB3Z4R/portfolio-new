@@ -1,5 +1,6 @@
 <template>
   <div class="footer">
+    <Logo />
     <h4>{{ msg }}</h4>
     <h5>Made with ❤️ in Vue & NuXT and handcrafted CSS © 2021</h5>
     <!-- <div class="links">
@@ -29,18 +30,19 @@ export default {
 
 
 .footer {
-  margin: 10px auto;
-  padding: 20px auto;
+  margin: 100px auto;
+  padding: 0px auto;
   /* border-top: 1px solid var(--gray); */
   color: var(--gray);
 }
 h4 {
-  margin: 40px auto;
+  margin: 10px auto;
 }
 h5 {
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: 100;
+  /* font-family: 'Fjalla One', sans-serif; */
+  font-weight: 200;
   font-size: 14px;
+  color: var(--secondary);
 }
 a {
   color: var(--primary);

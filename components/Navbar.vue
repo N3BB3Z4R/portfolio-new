@@ -21,8 +21,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .nuxt-link-active {
-  background-color: var(--alter);
+  background-color: var(--terciary);
   color: white;
+  font-weight: 900;
   text-shadow: 0 0 5px var(--secondary);
 }
 h3 {
@@ -47,7 +48,7 @@ a {
   border: 1px solid var(--primary);
   letter-spacing: 0.3rem;
   transition: 500ms;
-  font-family: 'Fjalla One', sans-serif;
+  /* font-family: 'Fjalla One', sans-serif; */
   font-weight: 100;
 }
 a:hover {
@@ -55,42 +56,11 @@ a:hover {
   background-color: var(--primary);
   letter-spacing: 0.5rem;
   padding: 10px 10px;
-  animation: pulse 1.5s infinite;
-  font-weight: 600;
+  animation: pulse 1.5s ease-in-out infinite;
+  font-weight: 800;
   border-radius: 2px;
 }
 a:not(:hover) {
-  animation: release 1s;
+  animation: release 1.2s;
 }
-@keyframes pulse {
-	0% {
-		transform: scale(1);
-		box-shadow: 0 0 0 0 var(--secondary);
-	}
-
-	70% {
-		transform: scale(1.1);
-		box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
-	}
-
-	100% {
-		transform: scale(1);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	}
-}
-@keyframes release {
-	0% {
-		box-shadow: 0 0 0 0 var(--secondary);
-    transform: scale(1.1);
-	}
-
-	70% {
-		box-shadow: 0 0 0 6px rgba(0, 0, 0, 0);
-	}
-
-	100% {
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	}
-}
-
 </style>
