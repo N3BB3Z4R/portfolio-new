@@ -34,4 +34,5 @@ export default {
     transform: scale(1);
     transition: 800ms;
   }
+  
 </style>
