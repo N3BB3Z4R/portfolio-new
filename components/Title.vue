@@ -42,8 +42,8 @@ export default {
   }
   .linkhome:hover h1, 
   .linkhome:hover h2 {
-    /* transform: scale(0.97); */
-    transition: 100ms;
+    transform: scale(1);
+    transition: 80ms;
     font-weight: 800;
     text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
@@ -60,7 +60,7 @@ export default {
   }
   .linkhome:not(:hover) h1,
   .linkhome:not(:hover) h2 {
-    transform: scale(1);
+    transform: scale(0.95);
     transition: 100ms;
     animation: flashing 10s ease-in-out infinite;
   }
