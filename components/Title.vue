@@ -25,10 +25,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap');
   h1 {
     text-shadow: 0px 0px 70px var(--secondary);
-    font-family: 'Vollkorn', serif;
     font-weight: 900;
     margin-bottom: 30px;
     margin-top: 50px;
@@ -43,7 +42,7 @@ export default {
   }
   .linkhome:hover h1, 
   .linkhome:hover h2 {
-    transform: scale(0.97);
+    /* transform: scale(0.97); */
     transition: 100ms;
     font-weight: 800;
     text-shadow: 0 1px 0 #ccc,
@@ -80,6 +79,7 @@ export default {
     Arial,
     sans-serif;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-family: 'Signika', sans-serif; */
   display: block;
   font-weight: 500;
   font-size: 125px;

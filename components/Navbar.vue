@@ -35,13 +35,13 @@ ul {
   width: 100%;
 }
 li {
-  display: inline-block;
+  display: inline-flex;
   margin: 0 15px;
 }
 a {
   display: inline-block;
   border-radius: 6px;
-  margin: 20px 6px;
+  margin: 20px 5px;
   padding: 10px 10px;
   width: 100%;
   color: var(--primary);
