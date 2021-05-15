@@ -21,7 +21,6 @@ export default {
 <style scoped>
 .contact {
   margin: 0 auto;
-  padding: 30px 0;
   width: 50%;
   border-top: 0px solid var(--secondary);
 }

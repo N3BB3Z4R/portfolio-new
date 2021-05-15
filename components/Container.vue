@@ -10,6 +10,8 @@
       Always trying to understand all the parts
       of the media production process. I started with photo editing,
       2D design and 3D design, through front-end web dev and UI/UX for some years.
+    </p>
+    <p>
       After that I become to do photography, and then switch to cameraman
       and videoeditor/compositor for TV and films, doing often some vfxs
       and foley audio production, also doing 3d animation and simulations,
@@ -61,8 +63,20 @@ li {
 a {
   color: var(--primary);
 }
-p {
+p:nth-child(even) {
   margin: 10px auto;
+  padding-right: 50%;
   width: 100%;
+  display: inline-block;
+  text-align: left;
+  float: left;
+}
+p:nth-child(odd) {
+  margin: 10px auto;
+  padding-left: 50%;
+  width: 100%;
+  display: block;
+  text-align: left;
+  float: right;
 }
 </style>

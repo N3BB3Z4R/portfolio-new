@@ -30,8 +30,9 @@ export default {
 
 
 .footer {
-  margin: 100px auto;
+  margin: 20px auto;
   padding: 0px auto;
+  padding-bottom: 60px;
   /* border-top: 1px solid var(--gray); */
   color: var(--gray);
 }

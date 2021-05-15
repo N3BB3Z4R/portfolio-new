@@ -32,6 +32,7 @@ h3 {
 ul {
   list-style-type: none;
   padding: 0;
+  width: 100%;
 }
 li {
   display: inline-block;

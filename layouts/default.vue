@@ -12,7 +12,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0px;
+  /* margin: 0px; */
 }
 
 .button--green {
@@ -50,6 +50,20 @@
   text-align: center;
   margin: 0 auto;
 }
+
+.container {
+  margin: 0 auto;
+  padding: 30px 0;
+  /* min-height: 100vh; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fade 0.4s ease-in-out;
+  width:70%;
+  transition: 400ms;
+}
+
 
 
 </style>
