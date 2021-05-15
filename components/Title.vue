@@ -87,9 +87,6 @@ export default {
   letter-spacing: 13px;
   margin-top: 60px;
 }
-.title::before {
-  height: 20px;
-}
 
 .subtitle {
   font-weight: 300;
