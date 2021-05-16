@@ -22,9 +22,13 @@ $ npm run generate
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 ## TO-DO
+* Dynamic Search box.
+> https://github.com/nuxt-community/lunr-module
+* Filter by type inside each section.
 * Works Timeline.
 * Skills/Languages/Studies/Programs Tag Cloud.
 * Contact Form backend.
+> https://codeburst.io/create-fantastic-forms-in-15-minutes-or-less-using-vue-nuxt-and-netlify-25e97e779fea
 * Make Anchor position in Nav Buttons
 * Youtube Embedding native / or Vimeo embed - with autofit
 > https://www.npmjs.com/package/vue-youtube-embed

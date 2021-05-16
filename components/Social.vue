@@ -14,6 +14,7 @@
       <a href="https://soundcloud.com/realnebe" target="_blank" alt="SoundCloud"><i class="fab fa-soundcloud"></i></a>
       <a href="https://www.linkedin.com/in/oscar-nebe-abad/" target="_blank" alt="LinkedIn"><i class="fab fa-linkedin"></i></a>
       <a href="https://www.imdb.com/name/nm5643050/" target="_blank" alt="iMDB"><i class="fab fa-imdb"></i></a>
+      <a href="https://opensea.io/accounts/n3bb3z4r" target="_blank" alt="iMDB"><i class="fas fa-anchor"></i></a>
   </div>
 </template>
 

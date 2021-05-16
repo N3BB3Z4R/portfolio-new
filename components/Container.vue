@@ -65,15 +65,15 @@ a {
 }
 p:nth-child(even) {
   margin: 10px auto;
-  padding-right: 50%;
+  padding-right: 40%;
   width: 100%;
-  display: inline-block;
+  /* display: inline-block; */
   text-align: left;
   float: left;
 }
 p:nth-child(odd) {
-  margin: 10px auto;
-  padding-left: 50%;
+  margin: 30px auto;
+  padding-left: 40%;
   width: 100%;
   display: block;
   text-align: left;
