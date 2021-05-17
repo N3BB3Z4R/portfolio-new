@@ -7,14 +7,19 @@
       <p>Heroku/Vercel, AWS/Firebase/CDN, WAMP/XAMP/LAMP/MEAN, MySQL/MSSQL/Oracle, NPM/Node.js, ExpressJS, MongoDB/MariaDB, SSH/Bash</p>
       <p>Typescript, CharJS, SASS/LESS/SCSS, Babel, ESLint, JEST, Pupeteer, Redux, Gulp/Webpack, AngularJS, Headless CMS/Wordpress/Joomla/Drupal, Handlebar, PUG/Jade, jQuery</p>
       
-      <Card />
-      
+      <Gallery :images="imagesFrontend" />
+
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import { IMAGES_FRONTEND } from '../constants/images.js'
+export default {
+  data() {
+    return { imagesFrontend: IMAGES_FRONTEND }
+  }
+}
 </script>
 
 <style>

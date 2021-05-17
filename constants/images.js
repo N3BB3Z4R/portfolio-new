@@ -1,5 +1,6 @@
-export default [
+export const IMAGES_3D = [
     {
+        source: '3d',
         path: '/images/works/aguasinvaso2x.jpg',
         title: 'Water Simulation',
         category: 'Filostros',
@@ -29,6 +30,15 @@ export default [
         category: 'Filostros',
         desc: 'Photo report about eagles from wildlife',
     },
+    {
+        path: '/images/works/amsterdambikes2x.jpg',
+        title: 'Mimovida',
+        category: 'Filostros',
+        desc: 'Filostros y Forlayos project',
+    },
+]
+
+export const IMAGES_FRONTEND = [
     {
         path: '/images/works/amsterdambikes2x.jpg',
         title: 'Mimovida',

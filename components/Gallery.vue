@@ -1,6 +1,6 @@
 <template>
     <div class="images-container">
-        <div class="image-card" v-for="image in IMAGES" :key="image.title">
+        <div class="image-card" v-for="image in images" :key="image.title">
           <div class="image-container">
           <img :src="image.path" />
           <h3>{{ image.title }}</h3>
@@ -11,12 +11,9 @@
 </template>
 
 <script>
-import IMAGES from '~/constants/images.js'
 export default {
-  data() {
-      return {
-          IMAGES,
-      };
+  props: {
+    images: Array,
   }
 }
 </script>
