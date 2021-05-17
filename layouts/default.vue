@@ -1,7 +1,9 @@
 <template>
   <div class="centered">
     <Header />
-    <Nuxt />
+    <transition name="test" mode="out-in">
+      <Nuxt />
+    </transition>
     <Footer />
   </div>
 </template>
