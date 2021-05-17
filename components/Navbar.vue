@@ -42,21 +42,21 @@ a {
   display: inline-block;
   border-radius: 6px;
   margin: 20px 5px;
-  padding: 10px 10px;
+  padding: 10px 30px;
   width: 100%;
   color: var(--primary);
   text-decoration: none;
   border: 1px solid var(--primary);
   letter-spacing: 0.3rem;
-  transition: 500ms;
+  transition: 300ms;
   /* font-family: 'Fjalla One', sans-serif; */
   font-weight: 100;
 }
 a:hover {
   color: white;
   background-color: var(--primary);
-  letter-spacing: 0.5rem;
-  padding: 10px 10px;
+  letter-spacing: 0.45rem;
+  padding: 10px 36px;
   animation: pulse 1.5s ease-in-out infinite;
   font-weight: 800;
   border-radius: 2px;
