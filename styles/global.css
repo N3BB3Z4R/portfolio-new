@@ -32,6 +32,11 @@ body {
   margin: 0 auto;
 }
 
+img, Nuxt-image {
+  content-visibility: auto;
+  -moz-content-visibility: auto;
+}
+
 .button {
   display: inline-block;
   border-radius: 6px;

@@ -40,10 +40,15 @@ export default {
   .linkhome {
     text-decoration: none;
   }
+  .linkhome:hover h1 {
+    transition: 800ms;
+  }
+  .linkhome:hover h2 {
+    transition: 80ms;
+  }
   .linkhome:hover h1, 
   .linkhome:hover h2 {
     transform: scale(1);
-    transition: 80ms;
     font-weight: 800;
     text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
