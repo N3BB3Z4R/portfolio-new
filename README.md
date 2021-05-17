@@ -32,8 +32,6 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 * Make Anchor position in Nav Buttons
 * Youtube Embedding native / or Vimeo embed - with autofit
 > https://www.npmjs.com/package/vue-youtube-embed
-* Faster animated sections content transitions
-> https://nuxtjs.org/docs/2.x/features/transitions
 * Landing Effect CSS
 * Background Effect CSS
 * Footer Effects CSS
