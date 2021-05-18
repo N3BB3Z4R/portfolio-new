@@ -41,8 +41,8 @@ li {
 a {
   display: inline-block;
   border-radius: 6px;
-  margin: 20px 5px;
-  padding: 10px 30px;
+  margin: 20px 10px;
+  padding: 10px 20px;
   width: 100%;
   color: var(--primary);
   text-decoration: none;
@@ -56,7 +56,7 @@ a:hover {
   color: white;
   background-color: var(--primary);
   letter-spacing: 0.45rem;
-  padding: 10px 36px;
+  padding: 10px 25px;
   animation: pulse 1.5s ease-in-out infinite;
   font-weight: 800;
   border-radius: 2px;

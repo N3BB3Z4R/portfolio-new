@@ -2,7 +2,7 @@
   <div>
     <div>
       <!-- <Header /> -->
-      <Container class="container" msg="ABOUT ME"/>
+      <Home class="container" msg="WELCOME"/>
       <!-- <Contact /> -->
       <!-- <Footer /> -->
     </div>
