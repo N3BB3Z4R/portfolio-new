@@ -55,8 +55,8 @@ a {
 a:hover {
   color: white;
   background-color: var(--primary);
-  letter-spacing: 0.45rem;
-  padding: 10px 25px;
+  letter-spacing: 0.40rem;
+  padding: 10px 20px;
   animation: pulse 1.5s ease-in-out infinite;
   font-weight: 800;
   border-radius: 2px;
