@@ -1,10 +1,11 @@
 <template>
   <div class="contact">
-    <h2>CONTACT ME</h2>
+    <h2>SAY HELLO!</h2>
+    <p>Hi! Don't hesitase to contact me to hire me for your company or any project what you want, ask me any question related. I'll answer you A.S.A.P.</p>
     <input type="text" />
     <input type="text" />
     <textarea type="text" />
-    <a class="button" href="#">Send</a>
+    <a class="button" href="#">SEND</a>
   </div>
 </template>
 

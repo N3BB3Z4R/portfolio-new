@@ -25,7 +25,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@900&display=swap');
   h1 {
     text-shadow: 0px 0px 70px var(--secondary);
     font-weight: 900;

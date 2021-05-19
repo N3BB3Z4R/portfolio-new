@@ -1,11 +1,13 @@
 <template>
     <div class="images-container">
         <div class="image-card" v-for="image in images" :key="image.title">
-          <div class="image-container">
-          <img :src="image.path" />
-          <h3>{{ image.title }}</h3>
-          <h4>{{ image.category }}</h4>
-          </div>
+          <a v-bind:href="image.path" target="_blank">
+            <div class="image-container">
+              <img :src="image.path" />
+              <h3>{{ image.title }}</h3>
+              <h4>{{ image.category }}</h4>
+            </div>
+          </a>
         </div>
     </div>
 </template>

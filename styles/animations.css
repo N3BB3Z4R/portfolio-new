@@ -73,7 +73,7 @@
 @keyframes release {
 	0% {
 		box-shadow: 0 0 0 0 var(--secondary);
-    transform: scale(1.1);
+    transform: scale(1.02);
 	}
 
 	70% {

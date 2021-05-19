@@ -2,7 +2,7 @@
   <div class="footer">
     <Logo />
     <h4>{{ msg }}</h4>
-    <h5>Made with ❤️ in Vue & NuXT and handcrafted CSS © 2021</h5>
+    <h5>Made with ❤️ in Vue & NuXT and handcrafted CSS and Deployed in Vercel © Óscar 'Nebe' Abad 2021</h5>
     <!-- <div class="links">
       <a
         href="https://github.com/nuxt/nuxt.js"
