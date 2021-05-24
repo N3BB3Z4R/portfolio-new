@@ -11,6 +11,7 @@
       </p>
       <client-only placeholder="Loading...">
         <!-- <youtube :video-id="9vXvKRxLn_c" @ready="ready" @playing="playing"></youtube> -->
+        <iframe width="460" height="415" src="https://www.youtube.com/embed/9vXvKRxLn_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe src="https://player.vimeo.com/video/47984127" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
       </client-only>
 
