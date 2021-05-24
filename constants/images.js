@@ -78,4 +78,16 @@ export const IMAGES_VIDEOVFX = [
         category: 'Video Production',
         desc: 'A series of video tutorials focused to B2B clients.',
     },
+    {
+        path: '/images/works/bodacostumbrista2x.jpg',
+        title: 'BCA Tutorials',
+        category: 'Event Video & Photo',
+        desc: 'Photobooks for Weddings and other family events with a different point of view.',
+    },
+    {
+        path: '/images/works/bookperra2x.jpg',
+        title: 'Dog Portrait',
+        category: 'Animal Photoshoot',
+        desc: 'Animal photobooks with natural, posed and funny styles.',
+    },
 ]
