@@ -35,6 +35,12 @@ export const IMAGES_3D = [
         category: '3D Virtual-Tour',
         desc: 'A 3d web Virtual-Tour for Rising S Shelters, showing the Aristocrat model.',
     },
+    {
+        path: '/images/works/bikecampo2x.jpg',
+        title: 'A Bike\'s Day',
+        category: 'Lifestyle Photo',
+        desc: 'An example of hundreds of lifestyle photo sesions for branding.',
+    },
 ]
 
 export const IMAGES_FRONTEND = [
