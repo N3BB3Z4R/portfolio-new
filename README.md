@@ -34,6 +34,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 > https://www.npmjs.com/package/vue-youtube-embed
 * Landing Effect CSS
 * Background Effect CSS
+* Reducir y Hacer CSS con solo los iconos social necesarios
 * Footer Effects CSS
 * Create new Logo
 * Create new Favicon

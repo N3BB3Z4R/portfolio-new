@@ -64,4 +64,5 @@ a:hover {
 a:not(:hover) {
   animation: release 1.2s;
 }
+
 </style>

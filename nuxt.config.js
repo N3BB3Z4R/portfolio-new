@@ -30,6 +30,8 @@ export default {
   plugins: [
     // { src: '@/plugins/youtube.js', ssr: false }
     // '@./tools/youtube.js',
+    // '@./tools/parallax.js',
+    // { src: '@/tools/parallax.js', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
