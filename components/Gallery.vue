@@ -59,59 +59,63 @@ export default {
     Arial,
     sans-serif;
 }
-
-.image-card:hover {
-  /* box-shadow: 0px 0px 20px black; */
-  z-index: 5;
-}
-.image-card:hover img {
-  transform: scale(1.05);
-}
-.image-container:hover h4 {
-  display: block;
-}
-
-.image-container:not(:hover) {
-  z-index: auto;
-  box-shadow: 0px 0px 0px black;
-  transition: 700ms ease-in-out;
-}
+  .image-card:hover {
+    /* box-shadow: 0px 0px 20px black; */
+    z-index: 5;
+  }
+  .image-card:hover img {
+    transform: scale(1.05);
+  }
 
 .image-container {
   position:relative;
   transition: 300ms ease-in-out;
 }
+  .image-container:hover h4 {
+    display: block;
+  }
+  .image-container:not(:hover) {
+    z-index: auto;
+    box-shadow: 0px 0px 0px black;
+    transition: 700ms ease-in-out;
+  }
 
-/* .image-container a:hover, */
-.image-container:hover h3 {
-  color: var(--primary);
-  /* font-weight: 700; */
-  text-shadow: 2px 2px 3px #000;
-  font-size: 1.15em;
-}
-.image-container:hover h4 {
-  color: var(--primary);
-  text-shadow: 2px 2px 3px #000;
-  bottom: 5px;
-  letter-spacing: 0.30rem;
-}
 .image-container h3 {
   text-shadow: 2px 2px 3px #000;
   position:absolute;
-  top: 5%;
+  top: 20%;
   left: 10%;
-  font-size: 60%;
+  font-size: 20px;
+  font-size: 1.5vw;
+  transform: scale(1);
   text-transform: uppercase;
 }
+  .image-container:hover h3 {
+    color: var(--primary);
+    /* font-weight: 700; */
+    text-shadow: 2px 2px 3px #000;
+    transform: scale(1.25);
+    left: 6%;
+    /* font-size: 22px;
+    font-size: 1.6vw; */
+  }
 
 .image-container h4 {
     position: absolute;
-    font-size: 1em;
-    top: 85%;
+    font-size: 18px;
+    font-size: 1.4vw;
+    top: 80%;
     right: 10%;
     display: hidden;
     transition: 500ms;
 }
+  .image-container:hover h4 {
+    color: var(--primary);
+    text-shadow: 2px 2px 3px #000;
+    bottom: 5px;
+    letter-spacing: 0.20rem;
+  }
+
 .image-container img {
   width: 100%;
   object-fit: cover;
@@ -126,14 +130,15 @@ export default {
   filter: grayscale(60%);
   transform: scale(0.9);
   border-radius: 10px;
+  transition: 200ms ease-in-out;
 }
-.image-container:hover img {
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
-  background-size:contain;
-  /* border-radius: 10%; */
-  transform: rotate3d(0, 10, 1, 20deg);
-  filter: grayscale(0%);
-  box-shadow: 30px 30px 20px #000;
-}
+  .image-container:hover img {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+    background-size:contain;
+    /* border-radius: 10%; */
+    transform: rotate3d(0, 10, 1, 20deg);
+    filter: grayscale(0%);
+    box-shadow: 30px 30px 20px #000;
+  }
 
 </style>
