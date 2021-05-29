@@ -104,6 +104,27 @@ export const IMAGES_3D = [
         category: '3D Product Animation',
         desc: 'An example of industrial product showreel for the mask case of ISC Plastics.',
     },
+    {
+        path: '/images/works/monumental2x.jpg',
+        bigpath: '/images/works/g-',
+        title: 'Monumental Bullring',
+        category: '3D Archviz',
+        desc: 'A 3D archviz reconstruction of Monumental Bullring in Barcelona.',
+    },
+    {
+        path: '/images/works/moonshortfilm2x.jpg',
+        bigpath: '/images/works/g-',
+        title: '\'Moon\'',
+        category: '3D Animation Shortfilm',
+        desc: '\'Moon\', a 3D animation shortfilm with funny and tiny look.',
+    },
+    {
+        path: '/images/works/museo3602x.jpg',
+        bigpath: '/images/works/g-',
+        title: 'Virtual Museum',
+        category: '360 Virtual Tour',
+        desc: 'A 3D 360º virtual tour museum for web.',
+    },
 ]
 
 export const IMAGES_FRONTEND = [
@@ -362,5 +383,19 @@ export const IMAGES_VIDEOVFX = [
         title: 'Kali\'s Fishtanks',
         category: 'Video Book',
         desc: 'Video book of the microbiologist Carlos San Juan\'s Fishtanks with sea and interior ecosystems.',
+    },
+    {
+        path: '/images/works/labrujuladeeva2x.jpg',
+        bigpath: '/images/works/g-',
+        title: 'Eva\'s Compass',
+        category: 'Video Shortfilm',
+        desc: 'Video edit, color, vfx and sounding of Cristina Sardon\'s \'Eva\'s Compass\' shortfilm.',
+    },
+    {
+        path: '/images/works/labrujuladeeva2x.jpg',
+        bigpath: '/images/works/g-',
+        title: 'M\'Rele Haiti',
+        category: 'Video Documentary',
+        desc: 'A film documentary in Port Prince and Jacmel in Haiti about childrens life after earthquake.',
     },
 ]
