@@ -119,8 +119,8 @@ export const IMAGES_3D = [
         desc: '\'Moon\', a 3D animation shortfilm with funny and tiny look.',
     },
     {
-        path: '/images/works/museo36_2x.jpg',
-        bigpath: '/images/works/g-',
+        path: '/images/works/museo3602x.jpg',
+        bigpath: '/images/works/g-museo360.jpg',
         title: 'Virtual Museum',
         category: '360 Virtual Tour',
         desc: 'A 3D 360º virtual tour museum for web.',
