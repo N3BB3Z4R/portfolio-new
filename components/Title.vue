@@ -2,14 +2,14 @@
   <NuxtLink class="linkhome" to="/">
     <div>
       <h1 class="title">
-        OSCAR ABAD
+        ÓSCAR ABAD
         <!-- <div class="neon">
           <span class="text" data-text="Oscar Abad">Oscar Abad</span>
           <span class="gradient"></span>
           <span class="spotlight"></span>
         </div> -->
       </h1>
-      <h2 class="subtitle">I'm Audiovisual Generalist Creative Artist.</h2>
+      <h2 class="subtitle">Front End Dev, Video Production, 3D & Mograph</h2>
     </div>
   </NuxtLink>
 </template>
@@ -88,7 +88,8 @@ export default {
   /* font-family: 'Signika', sans-serif; */
   display: block;
   font-weight: 500;
-  font-size: 125px;
+  /* font-size: 125px; */
+      font-size: 3.5rem;
   color: var(--primary);
   letter-spacing: 13px;
   margin-top: 60px;
@@ -96,7 +97,7 @@ export default {
 
 .subtitle {
   font-weight: 300;
-  font-size: 42px;
+  font-size: 32px;
   color: var(--white);
   word-spacing: 5px;
   padding-bottom: 15px;

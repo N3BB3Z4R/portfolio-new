@@ -39,7 +39,7 @@ export default {
   }
   i {
     color: var(--primary);
-    width: 75px;
+    width: 50px;
     height: 60px;
     transform: scale(1);
     transition: 200ms;

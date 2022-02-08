@@ -2,7 +2,7 @@
   <div>
     <Title />
     <Social />
-    <Navbar />
+    <!-- <Navbar /> -->
   </div>
 </template>
 

@@ -1,9 +1,10 @@
 <template>
   <div class="centered">
     <Header />
-    <transition name="nuxt" mode="out-in">
+    <!-- <transition name="nuxt" mode="out-in">
       <Nuxt />
-    </transition>
+    </transition> -->
+    <MainText />
     <Footer />
   </div>
 </template>
@@ -22,7 +23,7 @@
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  min-height: 100vh;
 }
-
 
 </style>
