@@ -32,6 +32,14 @@ export default {
     // '@./tools/youtube.js',
     // '@./tools/parallax.js',
     // { src: '@/tools/parallax.js', ssr: false }
+    // {
+    //   src: '~/node_modules/vue-responsive-video-background-player',
+    //   ssr: false
+    // }
+    // "~/node_modules/vue-cute-timeline/dist",
+    // "~/plugins/myplugin.js"
+    // "~/node_modules/vue-pipeline-scalable/dist",
+    // "~/node_modules/vue-pipeline-scalable/dist"
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

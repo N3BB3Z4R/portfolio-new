@@ -51,10 +51,20 @@ h4 {
 h5 {
   /* font-family: 'Fjalla One', sans-serif; */
   font-weight: 200;
-  font-size: 14px;
-  color: var(--secondary);
+  font-size: 1rem;
+  color: var(--primary);
+  cursor: default;
+  /* color: var(--secondary); */
 }
 a {
   color: var(--primary);
+  text-decoration:none;
+  border-bottom:  1px dotted;
+  padding: 0.1rem 0;
+  transition: 60ms;
+}
+a:hover {
+  font-weight: 500;
+  transition: 60ms;
 }
 </style>

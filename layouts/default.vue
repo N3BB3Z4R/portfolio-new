@@ -1,13 +1,25 @@
 <template>
   <div class="centered">
     <Header />
+    
     <!-- <transition name="nuxt" mode="out-in">
       <Nuxt />
     </transition> -->
+    <!-- <Swiper /> :images="IMAGES3D" -->
     <MainText />
-    <Footer />
+    <!-- <a href="#" class="top">Back to Top &#8593;</a> -->
+    <Footer />    
   </div>
 </template>
+
+<script>
+import IMAGES3D from '../constants/images'
+export default {
+  props: {
+    images: Array,
+  }
+}
+</script>
 
 <style>
 

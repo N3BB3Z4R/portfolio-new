@@ -1,8 +1,11 @@
 <template>
-  <div>
+  <div id="header">
     <Title />
+    
     <Social />
+    <a class="more" href="#maintext">more</a>
     <!-- <Navbar /> -->
+    
   </div>
 </template>
 
@@ -17,6 +20,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+div {
+  margin-top: 0vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 h3 {
   margin: 40px 0 0 0;
 }
@@ -31,4 +41,5 @@ li {
 a {
   color: var(--primary);
 }
+
 </style>

@@ -25,7 +25,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@900&display=swap');
+
   h1 {
     text-shadow: 0px 0px 70px var(--secondary);
     font-weight: 900;
@@ -34,7 +34,7 @@ export default {
   }
 
   h2 {
-    text-shadow: 0 0 20px white;
+    text-shadow: 0 0 20px rgb(185, 185, 185);
   }
 
   .linkhome {
@@ -45,24 +45,21 @@ export default {
     font-weight: 300;
   }
   .linkhome:hover h2 {
-    transition: 80ms;
-    font-weight: 800;
+    transition: 120ms;
+    font-weight: 400;
   }
   .linkhome:hover h1, 
   .linkhome:hover h2 {
-    transform: scale(1.06);
-    text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
+    transform: scale(0.97);
+    text-shadow: 0 1px 0 rgb(77, 77, 77),
+               0 3px 0 #aaa,
                0 6px 1px rgba(0,0,0,.1),
                0 0 5px rgba(0,0,0,.1),
                0 1px 3px rgba(0,0,0,.3),
                0 3px 5px rgba(0,0,0,.2),
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
+               0 20px 20px rgba(0,0,0,.35);
   }
   .linkhome:not(:hover) h1,
   .linkhome:not(:hover) h2 {
@@ -98,7 +95,7 @@ export default {
 .subtitle {
   font-weight: 300;
   font-size: 32px;
-  color: var(--white);
+  color: #333;/* color: var(--white); */
   word-spacing: 5px;
   padding-bottom: 15px;
 }
