@@ -32,12 +32,15 @@ export default {
   h1 {
     text-shadow: 0px 70px 60px var(--secondary);
   }
+  a {
+    height: 40px;
+  }
   .social-icons {
     width: 100%;
     margin-top: 40px;
     vertical-align: middle;
     display: flex;
-    height: 40px;
+    max-height: 40px;
     flex-direction: row;
   }
   i {
@@ -52,7 +55,7 @@ export default {
     transition: 900ms;
   }
   i:hover {
-    color: var(--secondary);
+    color: var(--alter3);
     transform: scale(1.2);
   }
 </style>

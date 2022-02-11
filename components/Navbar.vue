@@ -1,10 +1,10 @@
 <template>
-  <nav id="nav" class="navbar is-transparent is-fixed-top">
+  <nav id="gallery" class="navbar is-transparent is-fixed-top">
     <ul>
+      <li><NuxtLink class-active="active" to="/frontend">FRONT-END</NuxtLink></li>
       <li><NuxtLink class-active="active" to="/videovfx">VIDEO & VFX</NuxtLink></li>
       <li><NuxtLink class-active="active" to="/3ddesign">3D DESIGN</NuxtLink></li>
-      <li><NuxtLink class-active="active" to="/frontend">FRONT-END</NuxtLink></li>
-      <li><NuxtLink class-active="active" to="/contact">CONTACT</NuxtLink></li>
+      <!-- <li><NuxtLink class-active="active" to="/contact">CONTACT</NuxtLink></li> -->
     </ul>
   </nav>
 </template>
@@ -21,7 +21,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .nuxt-link-active {
-  background-color: var(--terciary);
+  background-color: var(--alterA);
+  backdrop-filter: blur(2px);
   color: white;
   font-weight: 900;
   text-shadow: 0 0 5px var(--secondary);
@@ -53,13 +54,13 @@ a {
   font-weight: 100;
 }
 a:hover {
-  color: white;
+  color: var(--alter);
   background-color: var(--primary);
-  letter-spacing: 0.40rem;
-  padding: 10px 20px;
+  letter-spacing: 0.23rem;
   animation: pulse 1.5s ease-in-out infinite;
   font-weight: 800;
   border-radius: 2px;
+  transition: all 200ms ease-in-out;
 }
 a:not(:hover) {
   animation: release 1.2s;

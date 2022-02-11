@@ -1,8 +1,9 @@
 <template>
   <div id="maintext">
-    <p>
-      Im Front End Developer & UI/UX, and Creative designer as 3D designer and animator, video productor & postproduction, and other related roles including managing little teams and project managing with agile methods. I've been rotating between this roles through 20 last years.
+    <p class="resume">
+      <strong>Hi!</strong> I'm Front End Developer & UI/UX, and Creative designer as 3D designer and animator, video productor & postproduction, and other related roles including managing small teams and project managing with agile methods. I've been rotating between this roles through 20 last years.
     </p>
+    <a class="more" href="#gallery">well, let's see that gallery...</a>
     <h4>More than 20 years of experience on:</h4>
     <div class="skills">
       <div class="skill">
@@ -40,7 +41,9 @@
         </ul>
       </div>
     </div>
-    <a class="more" href="#header">back to top</a>
+    <!-- <a class="more" href="#header">back to top</a>
+    <br /> -->
+    
   </div>
 </template>
 
@@ -56,8 +59,12 @@
 } */
 
   #maintext {
+    padding-top: 0vh;
     font-size: 0.9rem;
-    height: 85vh;
+    min-height:100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
   p {
     font-size: 1.1rem;
@@ -65,6 +72,12 @@
     color: var(--primary);
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+  .resume {
+    padding: 2rem 0 0 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
   }
   h4 {
     color: var(--primary);
@@ -76,21 +89,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
-    margin: 60px 0;
+    margin: 0px 0;
     cursor: default;
   }
-  /*
-  .skill {
-    border: 1px solid var(--primary);
-    border-radius: 20px;
-  } */
   ul {
     list-style-type: none;
     padding: 0;
+    color: var(--primary);
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+  }
+  ul:hover {
+    transition: all 0.5s ease;
+  }
+  /* li {
     
-  }
-  li {
-    font-size: 0.7rem;
-    font-weight: 400;
-  }
+    
+  } */
 </style>

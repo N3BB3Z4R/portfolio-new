@@ -1,11 +1,9 @@
 <template>
   <div id="header">
     <Title />
-    
     <Social />
-    <a class="more" href="#maintext">more</a>
-    <!-- <Navbar /> -->
-    
+    <a class="more" href="#maintext">m'kay, tell me more...</a>
+    <!-- <Navbar /> -->    
   </div>
 </template>
 

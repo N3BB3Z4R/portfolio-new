@@ -3,11 +3,15 @@
     --gray: #666;
     --white: #fff;
     --terciary: #5c3f00;
-    --secondary: #f0b03b;
+    /* --secondary: #f0b03b; */
     /* --primary: #ffae00; */
-    --primary: #413727;
-    --alter: #31240c;
+    --secondary: #b2fdf9;
+    --primary: #b1dddd;
+    --alter: #0c1c31;
+    --alterA: hsl(214, 61%, 12%, 0.3);
     --alter2: #291026;
+    --alter3: #cec21a;
+    /* --alter3: #bcce1a; */
 
     /* --back1: #14242b;
     --back2: #0c2e2b;

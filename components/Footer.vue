@@ -41,7 +41,7 @@ export default {
 .footer {
   margin: 20px auto;
   padding: 0px auto;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   /* border-top: 1px solid var(--gray); */
   color: var(--gray);
 }

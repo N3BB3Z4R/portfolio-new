@@ -39,14 +39,19 @@ export default {
 
   .linkhome {
     text-decoration: none;
+    
   }
   .linkhome:hover h1 {
     transition: 800ms;
     font-weight: 300;
+    color: var(--secondary);
+    /* filter: invert(1);    */
   }
   .linkhome:hover h2 {
     transition: 120ms;
-    font-weight: 400;
+    font-weight: 400;    
+    color: var(--secondary);
+    /* filter: invert(1); */
   }
   .linkhome:hover h1, 
   .linkhome:hover h2 {
@@ -58,8 +63,8 @@ export default {
                0 1px 3px rgba(0,0,0,.3),
                0 3px 5px rgba(0,0,0,.2),
                0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.35);
+               0 10px 10px rgba(232, 237, 238, 0.2),
+               0 20px 20px rgba(248, 248, 248, 0.35);
   }
   .linkhome:not(:hover) h1,
   .linkhome:not(:hover) h2 {
@@ -69,7 +74,6 @@ export default {
   }
 
 .title {
-  color: var(--secondary);
   font-family:
     'Quicksand',
     'Source Sans Pro',
@@ -90,12 +94,13 @@ export default {
   color: var(--primary);
   letter-spacing: 13px;
   margin-top: 60px;
+  
 }
 
 .subtitle {
   font-weight: 300;
   font-size: 32px;
-  color: #333;/* color: var(--white); */
+  color: var(--secondary);/* color: var(--white); */
   word-spacing: 5px;
   padding-bottom: 15px;
 }
