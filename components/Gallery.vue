@@ -105,9 +105,13 @@ export default {
   .image-container:hover h3 {
     color: var(--alter3);
     /* font-weight: 700; */
-    text-shadow: 2px 2px 5px #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 1px var(--alter);
+    font-weight: bold;
     transform: scale(1.25);
     left: 6%;
+    z-index:80;
+    transition: all 300ms ease-in-out;
     /* font-size: 22px;
     font-size: 1.6vw; */
   }
@@ -127,6 +131,16 @@ export default {
     bottom: 5px;
     letter-spacing: 0.20rem;
   }
+
+.image-container p {
+  position: relative;
+  top: -10%;
+  left: 10%;
+  font-size: 14px;
+  float:left;
+  width: 80%;
+  z-index: 70;
+}
 
 .image-container img {
   width: 100%;
@@ -152,5 +166,7 @@ export default {
     filter: grayscale(0%);
     box-shadow: 30px 30px 10px hsla(0, 0%, 0%, 0.5);
   }
+
+
 
 </style>

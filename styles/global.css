@@ -170,6 +170,29 @@ h2 {
   }
 }
 
+/* ######################### 
+####### SCROLLBARS #########
+############################*/
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0.7rem;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey; */
+    background-color: var(--scrolltrack);
+    border-radius: 0px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrolltrack);
+    border: 2px solid var(--alter3);
+    border-radius: 10px;
+  }
+
 
 /* ######################### 
 ########## STARS ###########

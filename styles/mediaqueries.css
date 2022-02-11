@@ -39,3 +39,18 @@
     /* filter: invert(1); */
   }
 }
+
+@media only screen and (min-width: 1920px) {
+  .image-container:hover h3 {
+    font-size: 1rem;
+  }
+  .image-container:hover h4 {
+    font-size: 0.8rem;
+  }
+  #stars, #stars2, #stars3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}

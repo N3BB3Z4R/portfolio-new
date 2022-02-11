@@ -1,7 +1,8 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Nebe Portfolio',
+    title: 'Óscar Abad Portfolio',
+    description: 'Front End Dev, Video Production, 3D & Mograph.',
     htmlAttrs: {
       lang: 'en'
     },
@@ -11,8 +12,10 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // { rel: 'icon', type: 'image/x-icon', href: '/assets/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: '/favicon.png', size: '128x128' },
       { rel:"stylesheet", type:"text/css", href: 'https://use.fontawesome.com/releases/v5.15.3/css/all.css' }
+      // { rel:"stylesheet", type:"text/css", href: '/styles/fontawesome-5-15-3.all.css' }
     ]
   },
 
