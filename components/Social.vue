@@ -45,11 +45,11 @@ export default {
   }
   i {
     color: var(--primary);
-    width: 50px;
+    width: 60px;
     height: 60px;
     transform: scale(1);
     transition: 200ms;
-    font-size: 30px;
+    font-size: 40px;
   }
   i:not(:hover) {
     transition: 900ms;

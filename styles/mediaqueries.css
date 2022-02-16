@@ -38,6 +38,13 @@
     margin: 0;
     /* filter: invert(1); */
   }
+
+  .image-container h4 {
+    font-size: 1.3rem !important;
+  }
+  .image-container h3 {
+    font-size: 1.7rem !important;
+  }
 }
 
 @media only screen and (min-width: 1920px) {
@@ -51,6 +58,13 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+  }
+
+  .image-container h4 {
+    font-size: 0.75rem !important;
+  }
+  .image-container h3 {
+    font-size: 1rem !important;
   }
 }

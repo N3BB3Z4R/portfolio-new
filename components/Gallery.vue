@@ -5,7 +5,7 @@
             <div class="image-container">
               <img :src="image.path" />
               <h3>{{ image.title }}</h3>
-              <!-- <p>{{ image.desc }}</p> -->
+              <p>{{ image.desc }}</p>
               <h4>{{ image.category }}</h4>
             </div>
           </a>
@@ -87,7 +87,7 @@ export default {
   top: 20%;
   left: 10%;
   font-size: 20px;
-  font-size: 1.5vw;
+  font-size: 0.90rem;
   transform: scale(1);
   text-transform: uppercase;
 }
@@ -119,7 +119,7 @@ export default {
 .image-container h4 {
     position: absolute;
     font-size: 18px;
-    font-size: 1.4vw;
+    font-size: 0.8rem;
     top: 80%;
     right: 10%;
     display: hidden;
@@ -133,7 +133,7 @@ export default {
   }
 
 .image-container p {
-  position: relative;
+  position: absolute;
   top: -10%;
   left: 10%;
   font-size: 14px;
