@@ -9,11 +9,12 @@
       <div class="skill">
         <p>Front End Developer & UI/UX Designer</p>
         <ul>
-          <li>HTML, CSS, SASS, Javascript, TypeScript, GIT.</li>
-          <li>Bootstrap, Tailwind, Styled-Components, Bulma, PostCSS, Gatsby.</li>
-          <li>React.js, Vue.js, Node.js, JEST, PaaS (Vercel, Heroku).</li>
+          <li>HTML, CSS, SASS, Javascript, TypeScript, GIT, CI/CD.</li>
+          <li>OOCSS, SMACSS, BEM, Bootstrap, Tailwind, Styled-Components, Bulma, PostCSS, Gatsby.</li>
+          <li>React.js, NextJS, Vue.js, NuxtJS, Node.js, PaaS (Vercel, Heroku).</li>
+          <li>JEST, Testing Libraries, Cypress, </li>
           <li>Wordpress, Joomla, Drupal, Headless CMS.</li>
-          <li>Photoshop, Illustrator, XD, Invision.</li>
+          <li>Photoshop, Illustrator, XD, Invision, Figma.</li>
         </ul>
       </div>
       <div class="skill">
