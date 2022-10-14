@@ -1,1 +1,0 @@
-import youtube from '@../../vue-youtube-embed/lib/vue-youtube-embed'

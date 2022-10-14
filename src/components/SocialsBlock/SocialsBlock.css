@@ -1,0 +1,30 @@
+h1 {
+  text-shadow: 0px 70px 60px var(--secondary);
+}
+.social-icons {
+  /* height: 40px; */
+  width: 100vw;
+  /* margin-top: 0px; */
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* max-height: 40px; */
+  flex-direction: row;
+  padding-top: 2rem;
+  gap: 20px;
+}
+a > * {
+  color: var(--primary);
+  height: 100%;
+  transform: scale(1);
+  transition: 200ms;
+  font-size: 36px;
+}
+a > *:not(:hover) {
+  transition: 900ms;
+}
+a > *:hover {
+  color: var(--alter3);
+  transform: scale(1.2);
+}

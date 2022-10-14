@@ -1,0 +1,72 @@
+.linkhome h1 {
+  text-shadow: 0px 0px 60px var(--secondary);
+  /* font-weight: 900; */
+  margin-bottom: 20px;
+  padding-left: 1.3rem;
+  /* margin-top: 50px; */
+}
+
+.linkhome h2 {
+  padding-left: 0.3rem;
+  text-shadow: 0 0 20px rgb(185, 185, 185);
+}
+
+.linkhome {
+  text-decoration: none;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.linkhome:hover h1 {
+  transition: 800ms;
+  font-weight: 300;
+  color: var(--secondary);
+  transform: scale(1.15);
+  /* filter: invert(1);    */
+}
+.linkhome:hover h2 {
+  transition: 320ms;
+  /* font-weight: 400; */
+  color: var(--secondary);
+  transform: scale(1.02);
+  /* filter: invert(1); */
+}
+.linkhome:hover h1,
+.linkhome:hover h2 {
+  /* text-shadow: 0 1px 0 rgb(77, 77, 77), 0 3px 0 rgb(170, 170, 170),
+    0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(232, 237, 238, 0.2),
+    0 20px 20px rgba(248, 248, 248, 0.35); */
+}
+.linkhome:not(:hover) h1,
+.linkhome:not(:hover) h2 {
+  transform: scale(0.95);
+  transition: 300ms;
+  animation-name: flashing;
+  animation-duration: 10s animation- ease-in-out infinite;
+}
+
+.title {
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Oswald, Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* font-family: 'Signika', sans-serif; */
+  /* display: block; */
+  font-weight: 500;
+  /* font-size: 125px; */
+  font-size: 4rem;
+  color: var(--primary);
+  letter-spacing: 2vw;
+  text-align: center;
+  /* margin-top: 60px; */
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: var(--secondary); /* color: var(--white); */
+  word-spacing: 5px;
+  /* padding-bottom: 3rem; */
+}

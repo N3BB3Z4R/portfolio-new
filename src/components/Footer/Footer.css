@@ -1,0 +1,37 @@
+.footer {
+  margin: 20px auto;
+  padding: 0px auto;
+  padding-bottom: 40px;
+  /* border-top: 1px solid var(--gray); */
+  color: var(--gray);
+}
+h4 {
+  margin: 10px auto;
+}
+h5 {
+  /* font-family: 'Fjalla One', sans-serif; */
+  font-weight: 200;
+  font-size: 1rem;
+  color: var(--primary);
+  cursor: default;
+  /* color: var(--secondary); */
+}
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  /* padding: 0.1rem 0; */
+  transition: 60ms;
+}
+footer a:hover {
+  /* font-weight: 500; */
+  transition: 60ms;
+  border-bottom: 1px solid;
+}
+
+.pulsating {
+  transform: scale(1);
+  animation-name: heartBeating !important;
+  animation-duration: 1.5s;
+  animation: infinite ease-in-out !important;
+}

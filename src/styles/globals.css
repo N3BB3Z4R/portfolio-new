@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("./mediaqueries.css"); */
+@import url("./palete.css");
+@import url("./scrollbars.css");
+@import url("./starsBackground.css");
+@import url("./goUp.css");
+
+.mouse-trail {
+  /* className for the trail elements */
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  background: teal;
+  z-index: 60;
+}
+
+@font-face {
+  font-family: "Fjalla One";
+  src: url("../fonts/fjallaone.woff2");
+}
+/* @font-face {
+  font-family: 'Signika';
+  src: url('../fonts/Signika-VariableFont_wght.ttf');
+} */
+/* @font-face {
+  font-family: 'Universal';
+  src: url('../fonts/Uni_acc.ttf');
+}  */
+/* @font-face {
+  font-family: 'Steel';
+  src: url('../fonts/steeltongs.ttf');
+}  */
+@font-face {
+  font-family: "Movie";
+  src: url("../fonts/movieposter.ttf");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  /* box-sizing: content-box; */
+}
+
+html {
+  font-family: "Fjalla One", sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* font-weight: 300; */
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  /* filter: invert(0.9); */
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--black);
+  /* max-width: 80%; */
+  /* margin: 0 auto; */
+  height: 100vh;
+  /* width: 100vw; */
+  /* box-sizing: content-box; */
+  /* background-position: 0% 50%; */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    60deg,
+    var(--back1),
+    var(--back2),
+    var(--back3),
+    var(--back4)
+  );
+  /* background-size: 400% 400%; */
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  animation: gradient 12s ease infinite;
+  scroll-behavior: smooth;
+}
+
+.base-layer {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.background-layer {
+  -webkit-transform: translateZ(-999px) scale(2);
+  transform: translateZ(-999px) scale(2);
+}
+
+.more {
+  font-style: italic;
+  margin-top: 3rem;
+  color: var(--primary);
+  text-decoration: dotted;
+  transition: all 0.5s ease-in-out;
+}
+.more:hover {
+  color: var(--alter3);
+  text-decoration: underline;
+  transition: all 0.5s ease-in-out;
+}
+
+h1 {
+  margin: 2rem 0;
+}
+
+img {
+  content-visibility: auto;
+  -moz-content-visibility: auto;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 6px;
+  margin: 20px 0px;
+  padding: 10px 30px;
+  width: auto;
+  color: var(--primary);
+  text-decoration: none;
+  border: 1px solid var(--primary);
+  letter-spacing: 0.6rem;
+  transition: 500ms;
+  font-weight: normal;
+}
+.button:hover {
+  color: white;
+  background-color: var(--primary);
+  letter-spacing: 1rem;
+  animation: pulse 2s infinite;
+  font-weight: 600;
+}
+.button:not(:hover) {
+  animation: release 1s;
+}
+
+/* h2 {
+  margin-bottom: 20px;
+} */
+
+.container {
+  margin: 0 auto;
+  padding: 30px 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: sectionLoad 0.4s ease-in-out;
+  width: 100%;
+  transition: 400ms;
+}
+.container p {
+  max-width: 1100px;
+}
+
+/* @media (max-width: 768px) {
+  Body {
+    min-width: 90%;
+  }
+  .image-card {
+    flex: 1 100% !important;
+  }
+} */

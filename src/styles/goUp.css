@@ -1,0 +1,38 @@
+#goUp {
+  /* filter: invert(1); */
+  --offset: 50px;
+
+  position: sticky;
+  bottom: 10px;
+  margin-right: 0rem;
+  width: 50px;
+
+  place-self: center;
+  margin-top: calc(100vh + var(--offset));
+  z-index: 51;
+
+  /* visual styling */
+  text-decoration: none;
+  font-weight: bolder;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: var(--primary);
+
+  /* backdrop-filter: blur(10px); */
+  white-space: nowrap;
+}
+#goUp a {
+  box-shadow: 0 0 0 5px var(--alter3);
+  padding: 4px 50px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  border-radius: 1rem;
+  background-color: hsla(20, 0%, 20%, 0.4);
+  transition: all 0.5s ease;
+}
+#goUp a:hover {
+  font-size: 2rem;
+  transition: all 0.25s ease;
+  /* backdrop-filter: blur(4px); */
+  color: var(--alter3);
+}

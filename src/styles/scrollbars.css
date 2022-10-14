@@ -1,0 +1,24 @@
+/* ######################### 
+####### SCROLLBARS #########
+############################*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 8px 5px 1px rgb(25, 25, 25);
+  background-color: #15040c;
+  backdrop-filter: hue-rotate(180deg);
+  border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scrolltrack);
+  border-left: 1px solid var(--alter3);
+  border-radius: 10px;
+}
