@@ -7,6 +7,7 @@
 @import url("./scrollbars.css");
 @import url("./starsBackground.css");
 @import url("./goUp.css");
+@import url("./floatRings.css");
 
 .mouse-trail {
   /* className for the trail elements */

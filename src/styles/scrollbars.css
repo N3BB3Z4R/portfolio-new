@@ -4,21 +4,55 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 0.5rem;
   height: 0rem;
+  transition: all 0.5s ease;
+}
+::-webkit-scrollbar:hover {
+  width: 1.5rem;
+  transition: all 0.5s ease;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 8px 5px 1px rgb(25, 25, 25);
+  box-shadow: inset 18px 15px 1px rgb(25, 25, 25);
   background-color: #15040c;
   backdrop-filter: hue-rotate(180deg);
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  animation: scroll 2s infinite;
   border-radius: 0px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--scrolltrack);
-  border-left: 1px solid var(--alter3);
+  /* background: var(--scrolltrack); */
+  /* background: var(--alter3); */
+  border: 5px solid var(--alter3);
+  height: 1rem;
+  /* border-top: 8px solid var(--alter3); */
   border-radius: 10px;
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+  cursor: pointer;
 }

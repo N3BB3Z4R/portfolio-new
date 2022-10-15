@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { IMAGES_3D, IMAGES_FRONTEND, IMAGES_VIDEOVFX } from 'src/constants/images'
+import Title from 'src/components/Title/Title'
 
 type GalleryType = {
   title: string
@@ -80,15 +81,16 @@ const Gallery = () => {
 
   return (
     <div id="Gallery" className="text-[#b1dddd] w-full bg-gray-300/10 py-10 lg:px-8 pb-12 rounded-xl mx-auto flex flex-wrap md:flex-col justify-center items-center">
-      <h1 className="text-3xl font-bold text-center">Works</h1>
-      <div className="flex justify-center flex-wrap w-full gap-8">
+      <Title title="Works" />
+      <div className="flex justify-center flex-wrap w-full gap-8 px-8">
         {(
           <iframe width={1920} height="324"
             className="opacity-100 rounded-xl backdrop-blur-sm"
-            src="https://www.youtube.com/embed/9vXvKRxLn_c?autoplay=1&mute=1&loop=1?controls=0"
+            src="https://www.youtube.com/embed/9vXvKRxLn_c?autoplay=1&mute=1&playsinline=1&loop=1&controls=0&disablekb=1"
+            // src="https://www.youtube.com/embed/9vXvKRxLn_c?autoplay=1&mute=1&loop=1?controls=0"
             title="YouTube video player"
             frameBorder="0"
-            allow="accelerometer; muted; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen>
           </iframe>
         )}
@@ -109,7 +111,7 @@ const Gallery = () => {
             <button key={image.title + Date.now()} onClick={() => {
               setFocusImage(image)
               console.log(image.bigpath + image.path.split('/')[3])
-            }} className="group rounded-2xl scale-100 saturate-50 hover:saturate-100 object-center transition duration-500 ease-in-out flex justify-center items-center w-[90%] md:w-[45%] 2xl:w-[30%] overflow-hidden h-full hover:h-full hover:z-50">
+            }} className="group rounded-2xl scale-100 saturate-50 hover:saturate-100 object-center transition duration-500 ease-in-out flex justify-center items-center w-[90%] md:w-[46%] 2xl:w-[30%] overflow-hidden h-full hover:h-full hover:z-50">
               <div style={{ textShadow: '2px 3px 5px rgba(0,0,0,0.5)' }} className="relative h-full text-yellow-300">
                 <span className="absolute z-[51] flex flex-col justify-start items-center transition group-hover:translate-x-0 translate-x-full group-hover:opacity-100 opacity-0 top-0 left-0 py-4 px-6 bg-gradient-to-r from-sky-500/50 via-indigo-500/30 to-transparent w-full h-full">
                   <span className="text-xl font-semibold">
@@ -133,7 +135,6 @@ const Gallery = () => {
           )
         })}
       </div>
-      {/* <ButtonWrapper /> */}
     </div>
   )
 }

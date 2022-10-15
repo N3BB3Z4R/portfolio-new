@@ -9,7 +9,6 @@
   position: sticky;
   bottom: 10px;
   margin-right: 0rem;
-  opacity: 0.9;
   place-self: center;
   margin-top: calc(0vh + var(--offset));
   transform: translateY(calc(30px - var(--offset)));

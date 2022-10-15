@@ -1,0 +1,73 @@
+.floatRing {
+  -webkit-animation: floatRingsRolling 9s infinite linear;
+  animation: floatRingsRolling 9s infinite linear;
+  top: 6rem;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  box-shadow: 0 0 10rem 0.2rem var(--secondary), 0 0 6rem 0.2rem var(--alter3);
+  border-radius: 50%;
+  background-color: transparent;
+}
+/* .floatRing::after {
+  -webkit-animation: floatRingsVertical 9s infinite linear;
+  animation: floatRingsVertical 9s infinite linear;
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 20px solid var(--alter3);
+  border-color: var(--alter3) transparent var(--alter3) transparent;
+  transform-style: preserve-3d;
+} */
+.floatRing:nth-child(1) {
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+  border-radius: 50%;
+}
+.floatRing:nth-child(2) {
+  -webkit-animation-delay: -9s;
+  animation-delay: -6s;
+  border-radius: 50%;
+}
+.floatRing:nth-child(3) {
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+  border-radius: 50%;
+}
+
+/* @-webkit-keyframes floatRings {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+@keyframes floatRingsRolling {
+  0% {
+    /* transform: rotate3d(0.2, 0.2, 1, 0deg); */
+    transform: rotate(0deg);
+  }
+  100% {
+    /* transform: rotate3d(0.2, 0.2, 1, 360deg); */
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floatRingsVertical {
+  0% {
+    transform: rotate3d(1, 0, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(1, 0, 0, 360deg);
+  }
+}
+@keyframes floatRingsHorizontal {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}

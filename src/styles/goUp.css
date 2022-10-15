@@ -5,9 +5,9 @@
   position: sticky;
   bottom: 10px;
   margin-right: 0rem;
-  width: 50px;
+  width: 1px;
 
-  place-self: center;
+  place-self: end;
   margin-top: calc(100vh + var(--offset));
   z-index: 51;
 
@@ -22,7 +22,8 @@
 }
 #goUp a {
   box-shadow: 0 0 0 5px var(--alter3);
-  padding: 4px 50px;
+  margin: 0 0 1rem 0;
+  padding: 4px 10px;
   display: flex;
   align-self: center;
   justify-content: center;
