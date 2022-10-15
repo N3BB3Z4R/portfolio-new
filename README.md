@@ -2,4 +2,4 @@
 
 ## Next.js + TypeScript + Tailwind CSS + ESLint + Prettier
 
-- View demo at: https://portfolio-new-one.vercel.app/
+- View demo at: https://nebeworks.vercel.app/
