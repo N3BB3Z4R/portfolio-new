@@ -3,23 +3,31 @@
 ############################*/
 
 /* width */
+scrollbar,
+::-moz-scrollbar,
 ::-webkit-scrollbar {
   width: 0.5rem;
   height: 0rem;
   transition: all 0.5s ease;
 }
+scrollbar-hover,
+::-moz-scrollbar-hover,
 ::-webkit-scrollbar:hover {
   width: 1.5rem;
   transition: all 0.5s ease;
 }
 
 /* Track */
+scrollbar-track,
+::-moz-scrollbar-track,
 ::-webkit-scrollbar-track {
   box-shadow: inset 18px 15px 1px rgb(25, 25, 25);
   background-color: #15040c;
   backdrop-filter: hue-rotate(180deg);
   border-radius: 0px;
 }
+scrollbar-track::after,
+::-moz-scrollbar-track::after,
 ::-webkit-scrollbar-track::after {
   content: "";
   position: absolute;
@@ -40,6 +48,8 @@
 }
 
 /* Handle */
+scrollbar-thumb,
+::-moz-scrollbar-thumb,
 ::-webkit-scrollbar-thumb {
   /* background: var(--scrolltrack); */
   /* background: var(--alter3); */
@@ -50,7 +60,8 @@
   transform: scale(1);
   transition: all 0.5s ease;
 }
-
+scrollbar-thumb:hover,
+::-moz-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:hover {
   transform: scale(1.1);
   transition: all 0.5s ease;

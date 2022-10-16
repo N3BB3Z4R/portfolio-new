@@ -1,6 +1,6 @@
 //Get the button:
-// const goUp = document.querySelector(".goUp");
 const headerNav = document.querySelector(".header");
+const sun = document.querySelector(".sun");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
@@ -11,10 +11,16 @@ function scrollFunction() {
     headerNav.style.opacity = "1";
     headerNav.style.transform = "translateY(0%)";
     headerNav.style.transition = "all 0.5s ease-in-out";
+    sun.style.opacity = "0";
+    sun.style.transform = "translateY(0rem) translateX(7rem)";
+    sun.style.transition = "all 0.5s ease-in-out";
   } else {
     headerNav.style.opacity = "0";
-    headerNav.style.transform = "translateY(-100%)";
+    headerNav.style.transform = "translateY(0rem)";
     headerNav.style.transition = "all 0.5s ease-in-out";
+    sun.style.opacity = "1";
+    sun.style.transform = "translateY(-16rem) translateX(-4rem)";
+    sun.style.transition = "all 3s cubic-bezier(0.075, 0.82, 0.165, 1)";
   }
 }
 
