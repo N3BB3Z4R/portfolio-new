@@ -15,9 +15,9 @@ const Home: NextPage = () => {
       <Head>
         <title>Oscar Abad - Portfolio</title>
         <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png"></link>
-        <script async src="goUp.js" />
+        <script async src="go-up.js" />
       </Head>
-      <div className="flex flex-col gap-4 w-[90vw] lg:w-[70vw] xl:w-[60vw] mx-auto">
+      <div className="main flex flex-col gap-4 h-full w-[90vw] lg:w-[70vw] xl:w-[60vw] mx-auto">
         <span className="stars z-1" />
         <span className="stars2 z-1" />
         <span className="stars3 z-1" />

@@ -91,6 +91,11 @@ body {
   scroll-behavior: smooth;
 }
 
+.main {
+  /* max-height: 100%; */
+  /* box-sizing: border-box; */
+}
+
 .base-layer {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);

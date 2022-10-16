@@ -7,3 +7,9 @@ export type GalleryType = {
   path: string;
   bigpath: string;
 };
+export enum GalleryEnum {
+  All = "All",
+  ThreeDe = "3D",
+  FrontEnd = "FrontEnd",
+  VideoVFX = "VideoVFX",
+}
