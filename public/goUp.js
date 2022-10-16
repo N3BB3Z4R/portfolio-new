@@ -4,23 +4,32 @@ const sun = document.querySelector(".sun");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
+const width = window.innerWidth;
 
 function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ||
+    window.pageYOffset > 80 || document.documentElement.pageYOffset > 80) {
+    sun.style.opacity = "0";
+    sun.style.transform = "translateY(0rem) translateX(2rem)";
+    sun.style.transition = "all 0.5s ease-in-out";
+    // sun.style.display = "none";
+  } else {
+    sun.style.opacity = "1";
+    sun.style.transform = "translateY(-16rem) translateX(-4rem)";
+    sun.style.transition = "all 3s cubic-bezier(0.075, 0.82, 0.165, 1)";
+    // sun.style.display = "block";
+  }
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500 ||
     window.pageYOffset > 500 || document.documentElement.pageYOffset > 500) {
     headerNav.style.opacity = "1";
     headerNav.style.transform = "translateY(0%)";
     headerNav.style.transition = "all 0.5s ease-in-out";
-    sun.style.opacity = "0";
-    sun.style.transform = "translateY(0rem) translateX(7rem)";
-    sun.style.transition = "all 0.5s ease-in-out";
+    // headerNav.style.height = width > 768 ? "8rem" : "3rem";
   } else {
     headerNav.style.opacity = "0";
     headerNav.style.transform = "translateY(0rem)";
     headerNav.style.transition = "all 0.5s ease-in-out";
-    sun.style.opacity = "1";
-    sun.style.transform = "translateY(-16rem) translateX(-4rem)";
-    sun.style.transition = "all 3s cubic-bezier(0.075, 0.82, 0.165, 1)";
+    // headerNav.style.height = width > 768 ? "8rem" : "3rem";
   }
 }
 

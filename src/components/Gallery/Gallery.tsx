@@ -2,14 +2,8 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { IMAGES_3D, IMAGES_FRONTEND, IMAGES_VIDEOVFX } from 'src/constants/images'
 import Title from 'src/components/Title/Title'
-
-type GalleryType = {
-  title: string
-  desc: string
-  category: string
-  path: string
-  bigpath: string
-}
+import ImageModal from 'src/components/Gallery/ImageModal'
+import { GalleryType } from 'src/types/types'
 
 enum GalleryEnum {
   All = 'All',
@@ -96,15 +90,16 @@ const Gallery = () => {
         )}
         <ButtonWrapper />
         {focusImage && (
-          <button onClick={() => setFocusImage(null)} className="backdrop-blur-md fixed top-0 left-0 w-full h-full flex flex-wrap justify-center items-center bg-black/50 z-[52]">
-            <div className="relative">
-              <Image className="absolute object-scale-down lg:object-cover rounded-xl" src={focusImage.bigpath + focusImage.path.split('/')[3]} alt={focusImage.title} width={focusImage ? 600 : 10} height={focusImage ? 600 : 10} />
-              <div className="w-full absolute bottom-0 flex flex-col justify-center items-center p-4 pt-8 bg-gradient-to-t from-black/80 rounded-xl to-transparent">
-                <span className="text-2xl font-medium">{focusImage.title}</span>
-                <span>{focusImage.desc}</span>
-              </div>
-            </div>
-          </button>
+          <ImageModal image={focusImage} close={() => setFocusImage(null)} />
+          // <button onClick={() => setFocusImage(null)} className="backdrop-blur-md fixed top-0 left-0 w-full h-full flex flex-wrap justify-center items-center bg-black/50 z-[52]">
+          //   <div className="relative">
+          //     <Image className="absolute object-scale-down lg:object-cover rounded-xl" src={focusImage.bigpath + focusImage.path.split('/')[3]} alt={focusImage.title} width={focusImage ? 600 : 10} height={focusImage ? 600 : 10} />
+          //     <div className="w-full absolute bottom-0 flex flex-col justify-center items-center p-4 pt-8 bg-gradient-to-t from-black/80 rounded-xl to-transparent">
+          //       <span className="text-2xl font-medium">{focusImage.title}</span>
+          //       <span>{focusImage.desc}</span>
+          //     </div>
+          //   </div>
+          // </button>
         )}
         {galleryCollection?.map((image) => {
           return (
@@ -123,7 +118,7 @@ const Gallery = () => {
                 </span>
                 <span className="absolute z-[51] transition group-hover:translate-y-0 translate-y-full group-hover:opacity-100 opacity-0 bottom-0 right-0 py-4 px-6 bg-gradient-to-t from-sky-500/50 via-indigo-500/10 to-transparent h-full w-full flex justify-center items-end">{image.desc}</span>
                 <Image
-                  className="w-full blur-sm group-hover:blur-none h-48 self-center object-cover object-center scale-110 group-hover:scale-125 group-hover:object-contain transition duration-500 ease-in-out drop-shadow-md hover:drop-shadow-xl"
+                  className="w-full blur-none group-hover:blur-sm h-48 self-center object-cover object-center scale-110 group-hover:scale-125 group-hover:object-contain transition duration-500 ease-in-out drop-shadow-md hover:drop-shadow-xl"
                   src={image.path}
                   alt={image.title}
                   width={600}
