@@ -34,6 +34,7 @@ const Home: NextPage = () => {
         <div id="goUp" className="z-10 lg:w-1 flex justify-center">
           <a className="" href="#">&#8593;</a>
         </div>
+        <div className="h-2"></div>
       </div>
     </>
   )

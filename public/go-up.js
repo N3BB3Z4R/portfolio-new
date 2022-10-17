@@ -10,11 +10,11 @@ function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ||
     window.pageYOffset > 80 || document.documentElement.pageYOffset > 80) {
     sun.style.opacity = "0";
-    sun.style.transform = "translateY(0rem) translateX(2rem)";
+    sun.style.transform = "translateY(0rem) translateX(2rem) scale(0.1)";
     sun.style.transition = "all 0.5s ease-in-out";
   } else {
     sun.style.opacity = "1";
-    sun.style.transform = "translateY(-16rem) translateX(-4rem)";
+    sun.style.transform = "translateY(-16rem) translateX(-4rem) scale(1)";
     sun.style.transition = "all 3s cubic-bezier(0.075, 0.82, 0.165, 1)";
   }
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500 ||
