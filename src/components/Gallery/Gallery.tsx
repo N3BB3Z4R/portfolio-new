@@ -56,9 +56,9 @@ const Gallery = () => {
       <div className="flex flex-wrap flex-col md:flex-row justify-center gap-4 p-2 my-6 w-2/4 md:w-3/4 lg:w-full">
         {Object.values(GalleryEnum).map((value: string) => {
           return (
-            <button key={value} onClick={() => handleGallery(value)} className={`text-[#b1dddd] bg-gray-300/10 group hover:brightness-125 transition rounded-xl px-4 py-2 m-2 font-semibold relative ${buttonActive === value ? 'bg-yellow-300 text-neutral-800' : ''}`}>
+            <button key={value} onClick={() => handleGallery(value)} className={`text-[#b1dddd] bg-gray-300/10 group hover:brightness-125 border-4 border-yellow-400 transition rounded-xl px-4 py-2 m-2 font-semibold relative ${buttonActive === value ? 'bg-yellow-400 text-neutral-800' : ''}`}>
               {value}
-              <span className="absolute opacity-0 group-hover:opacity-100 transition left-[100%] top-[23%] w-6 h-6 bg-neutral-700 text-white rounded-r-lg">{galleriesCounter && galleriesCounter[value]}</span>
+              <span className="absolute opacity-0 group-hover:opacity-100 transition left-[100%] top-[23%] w-8 h-6 bg-yellow-400 text-black rounded-r-lg">{galleriesCounter && galleriesCounter[value]}</span>
             </button>
           )
         })}
