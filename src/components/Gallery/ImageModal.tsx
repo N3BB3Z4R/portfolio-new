@@ -50,7 +50,10 @@ const ImageModal = (props: Props) => {
         <div className="absolute -bottom-72 flex h-full w-full flex-col items-center justify-center ">
           <div className="mt-4 flex flex-col items-center justify-center rounded-xl bg-gradient-to-t from-black/80 to-black/60 p-4">
             <span className="text-2xl font-medium">{image.title}</span>
-            <span className="text-sm text-gray-300">{image.category}</span>
+            <span className="flex gap-4">
+              <span className="text-sm text-gray-300">{image.category}</span>
+              <span className="text-sm text-gray-300 font-bold">{image.year}</span>
+            </span>
             <span>{image.desc}</span>
             {image.video && (
               <a href={`https://youtu.be/${image.video}`} className="absolute top-[40vh] right-2" target="_blank" rel="noreferrer">

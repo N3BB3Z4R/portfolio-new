@@ -6,10 +6,11 @@ export type GalleryType = {
   category: string;
   path: string;
   bigpath: string;
+  year: string;
 };
 export enum GalleryEnum {
   All = "All",
-  ThreeDe = "3D",
   FrontEnd = "FrontEnd",
+  ThreeDe = "3D",
   VideoVFX = "VideoVFX",
 }

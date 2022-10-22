@@ -1,25 +1,25 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { IMAGES_3D, IMAGES_FRONTEND, IMAGES_VIDEOVFX } from 'src/constants/images'
+import { IMAGES_FRONTEND, IMAGES_3D, IMAGES_VIDEOVFX } from 'src/constants/images'
 import Title from 'src/components/Title/Title'
 import ImageModal from 'src/components/Gallery/ImageModal'
 import { GalleryType, GalleryEnum } from 'src/types/types'
 
 const Gallery = () => {
-  const [galleryCollection, setGalleryCollection] = useState<GalleryType[]>([...IMAGES_3D, ...IMAGES_FRONTEND, ...IMAGES_VIDEOVFX])
+  const [galleryCollection, setGalleryCollection] = useState<GalleryType[]>([...IMAGES_FRONTEND, ...IMAGES_3D, ...IMAGES_VIDEOVFX])
   const [buttonActive, setButtonActive] = useState<GalleryEnum>(GalleryEnum.All)
   const [galleriesCounter, setGalleriesCounter] = useState<any>()
   const [focusImage, setFocusImage] = useState<GalleryType | null>()
 
   useEffect(() => {
-    const allGalleries = [...IMAGES_3D, ...IMAGES_FRONTEND, ...IMAGES_VIDEOVFX].length
-    const threeDeGalleries = IMAGES_3D.length
+    const allGalleries = [...IMAGES_FRONTEND, ...IMAGES_3D, ...IMAGES_VIDEOVFX].length
     const frontEndGalleries = IMAGES_FRONTEND.length
+    const threeDeGalleries = IMAGES_3D.length
     const videoVFXGalleries = IMAGES_VIDEOVFX.length
     setGalleriesCounter({
       'All': allGalleries,
-      '3D': threeDeGalleries,
       'FrontEnd': frontEndGalleries,
+      '3D': threeDeGalleries,
       'VideoVFX': videoVFXGalleries
     })
   }, [])
@@ -30,15 +30,15 @@ const Gallery = () => {
     switch (gallerySelected) {
       case GalleryEnum.All:
         setButtonActive(GalleryEnum.All)
-        setGalleryCollection([...IMAGES_3D, ...IMAGES_FRONTEND, ...IMAGES_VIDEOVFX])
-        break
-      case GalleryEnum.ThreeDe:
-        setButtonActive(GalleryEnum.ThreeDe)
-        setGalleryCollection(IMAGES_3D)
+        setGalleryCollection([...IMAGES_FRONTEND, ...IMAGES_3D, ...IMAGES_VIDEOVFX])
         break
       case GalleryEnum.FrontEnd:
         setButtonActive(GalleryEnum.FrontEnd)
         setGalleryCollection(IMAGES_FRONTEND)
+        break
+      case GalleryEnum.ThreeDe:
+        setButtonActive(GalleryEnum.ThreeDe)
+        setGalleryCollection(IMAGES_3D)
         break
       case GalleryEnum.VideoVFX:
         setButtonActive(GalleryEnum.VideoVFX)
@@ -71,7 +71,7 @@ const Gallery = () => {
       <Title title="Works" />
       <div className="flex justify-center flex-wrap w-full gap-8 px-8">
         {(
-          <iframe width={1920} height="324"
+          <iframe width={1920} height="400"
             className="opacity-100 rounded-xl backdrop-blur-sm"
             src="https://www.youtube.com/embed/9vXvKRxLn_c?autoplay=1&mute=1&playsinline=1&loop=1&controls=0&disablekb=1"
             // src="https://www.youtube.com/embed/9vXvKRxLn_c?autoplay=1&mute=1&loop=1?controls=0"
