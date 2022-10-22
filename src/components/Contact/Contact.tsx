@@ -15,7 +15,7 @@ const Contact = () => {
   }
 
   return (
-    <div id="Contact" className="text-[#b1dddd] w-full h-full bg-gray-300/10 py-10 px-8 rounded-xl mx-auto flex flex-col justify-start items-center">
+    <div id="Contact" className="text-[#b1dddd] w-full h-full bg-gray-300/20 py-10 px-8 rounded-xl mx-auto flex flex-col justify-start items-center">
       <Title title="Contact" />
       {!toastShow && <div className="animate-pulse flex gap-2 justify-center items-end rotate-45 -translate-x-28 lg:-translate-x-40 translate-y-12 absolute">
         <span>Click on me!</span>

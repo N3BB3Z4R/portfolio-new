@@ -5,7 +5,7 @@ import { AboutMe, FrontItems, VideoItems, ThreeDeItems, ManagingItems } from 'sr
 
 const About = () => {
   return (
-    <div id="About" className="text-[#b1dddd] w-full bg-gray-300/10 py-10 px-6 lg:px-32 rounded-xl mx-auto flex flex-col xl:gap-16 justify-center items-center">
+    <div id="About" className="text-[#b1dddd] w-full bg-gray-300/20 py-10 px-6 lg:px-32 rounded-xl mx-auto flex flex-col xl:gap-16 justify-center items-center">
       <div className="flex flex-col xl:flex-row xl:gap-16">
         <div className="w-full xl:w-[40%]">
           <Title title="About" />

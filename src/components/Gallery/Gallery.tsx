@@ -67,7 +67,7 @@ const Gallery = () => {
   }
 
   return (
-    <div id="Gallery" className="text-[#b1dddd] w-full bg-gray-300/10 py-10 lg:px-8 pb-12 rounded-xl mx-auto flex flex-wrap md:flex-col justify-center items-center">
+    <div id="Gallery" className="text-[#b1dddd] w-full bg-gray-300/20 py-10 lg:px-8 pb-12 rounded-xl mx-auto flex flex-wrap md:flex-col justify-center items-center">
       <Title title="Works" />
       <div className="flex justify-center flex-wrap w-full gap-8 px-8">
         {(
