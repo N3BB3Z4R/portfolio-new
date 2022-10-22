@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Image from 'next/image'
 import Head from "next/head"
 import Header from "src/components/Header/Header";
 import WelcomeBlock from "src/components/WelcomeBlock/WelcomeBlock";
@@ -9,7 +8,6 @@ import Footer from "src/components/Footer/Footer";
 import Contact from "src/components/Contact/Contact";
 import Gallery from "src/components/Gallery/Gallery";
 import NextSectionButton from "src/components/NextSectionButton/NextSectionButton";
-import deathstar from "src/styles/deathstar.png";
 
 const Home: NextPage = () => {
   return (
