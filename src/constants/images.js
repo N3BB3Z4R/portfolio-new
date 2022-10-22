@@ -262,8 +262,8 @@ export const IMAGES_FRONTEND = [
     {
         path: '/images/works/mysteryman.jpg',
         bigpath: '/images/works/g-mysteryman.jpg',
-        title: 'Mystery Man SCUMM Point & Click Video Game',
-        category: 'Game Dev',
+        title: 'Mystery Man',
+        category: 'Game Dev Point & Click Videogame',
         desc: 'A point & click SCUMM video game.',
     },
     {
@@ -319,7 +319,7 @@ export const IMAGES_FRONTEND = [
         path: '/images/works/web19.jpg',
         bigpath: '/images/works/web19.jpg',
         title: 'UNED University Shop',
-        category: 'XTHML, CSS, ASP.NET',
+        category: 'XTHML, CSS, JS, ASP.NET',
         desc: 'Web eshop for UNED University.',
     },
     {
@@ -361,7 +361,7 @@ export const IMAGES_FRONTEND = [
         path: '/images/works/web13.jpg',
         bigpath: '/images/works/web13.jpg',
         title: 'Temporal Job Search',
-        category: 'HTML, CSS, React',
+        category: 'HTML, CSS, PHP',
         desc: 'Web for job search',
     },
     {

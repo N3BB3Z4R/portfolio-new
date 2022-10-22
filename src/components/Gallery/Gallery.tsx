@@ -90,12 +90,12 @@ const Gallery = () => {
             <button key={image.title + Date.now()} onClick={() => {
               setFocusImage(image)
             }} className="group rounded-2xl scale-100 saturate-50 hover:saturate-100 object-center transition duration-500 ease-in-out flex justify-center items-center w-[90%] md:w-[46%] 2xl:w-[30%] overflow-hidden h-full hover:h-full hover:z-50">
-              <div style={{ textShadow: '2px 3px 5px rgba(0,0,0,0.5)' }} className="relative h-full text-yellow-300">
-                <span className="absolute z-[51] flex flex-col justify-start items-center transition group-hover:translate-x-0 translate-x-full group-hover:opacity-100 opacity-0 top-0 left-0 py-4 px-6 bg-gradient-to-r from-sky-500/50 via-indigo-500/30 to-transparent w-full h-full">
-                  <span className="text-xl font-semibold">
+              <div style={{ textShadow: '2px 3px 5px rgba(0,0,0,0.6)' }} className="relative h-full text-yellow-300">
+                <span className="absolute z-[51] flex flex-col justify-start items-center transition group-hover:translate-x-0 translate-x-full group-hover:opacity-100 opacity-0 top-0 left-0 py-4 px-6 bg-gradient-to-br from-sky-500/50 via-indigo-500/30 to-transparent w-full h-full">
+                  <span className="text-xl font-semibold ">
                     {image.title}
                   </span>
-                  <span className="text-lg font-thin">
+                  <span className="text-md font-light">
                     {image.category}
                   </span>
                 </span>
@@ -104,8 +104,8 @@ const Gallery = () => {
                   className="w-full blur-none group-hover:blur-sm h-full self-center object-cover object-center scale-110 group-hover:scale-125 group-hover:object-contain transition duration-500 ease-in-out drop-shadow-md hover:drop-shadow-xl"
                   src={image.path}
                   alt={image.title}
-                  width={600}
-                  height={400}
+                  width={290}
+                  height={360}
                 />
               </div>
             </button>
