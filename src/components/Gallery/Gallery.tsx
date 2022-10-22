@@ -99,7 +99,7 @@ const Gallery = () => {
                     {image.category}
                   </span>
                 </span>
-                <span className="absolute z-[51] transition group-hover:translate-y-0 translate-y-full group-hover:opacity-100 opacity-0 bottom-0 right-0 py-4 px-6 bg-gradient-to-t from-sky-500/50 via-indigo-500/10 to-transparent h-full w-full flex justify-center items-end">{image.desc}</span>
+                <span className="absolute z-[51] transition group-hover:translate-y-0 translate-y-full group-hover:opacity-100 opacity-0 bottom-0 right-0 py-4 px-6 bg-gradient-to-t from-neutral-800/70 via-indigo-500/10 to-transparent h-full w-full flex justify-center items-end">{image.desc}</span>
                 <Image
                   className="w-full blur-none group-hover:blur-sm h-full self-center object-cover object-center scale-110 group-hover:scale-125 group-hover:object-contain transition duration-500 ease-in-out drop-shadow-md hover:drop-shadow-xl"
                   src={image.path}

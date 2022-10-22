@@ -12,6 +12,7 @@
   top: 0;
   left: 4vw;
   width: 100%;
+  will-change: transform;
 }
 
 /* html {
@@ -601,9 +602,19 @@
 
 @keyframes animStar {
   from {
-    transform: translateY(0px);
+    /* transform: translateY(0px); */
+    transform: translate3d(0, 0px, 0);
+    -webkit-transform: translate3d(0, 0px, 0);
+    -moz-transform: translate3d(0, 0px, 0);
+    -ms-transform: translate3d(0, 0px, 0);
+    -o-transform: translate3d(0, 0px, 0);
   }
   to {
-    transform: translateY(-2000px);
+    /* transform: translateY(-2000px); */
+    transform: translate3d(0, -2000px, 0);
+    -webkit-transform: translate3d(0, -2000px, 0);
+    -moz-transform: translate3d(0, -2000px, 0);
+    -ms-transform: translate3d(0, -2000px, 0);
+    -o-transform: translate3d(0, -2000px, 0);
   }
 }
