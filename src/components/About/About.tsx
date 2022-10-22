@@ -33,7 +33,7 @@ const About = () => {
                 <span key={item} className="hover:bg-blue-300 transition hover:text-neutral-800 bg-yellow-500/50 px-2 rounded-lg cursor-default">{item}</span>
               ))}
             </div>
-            <p className="mb-4 mt-6 text-lg">Team & Project Managing:</p>
+            <p className="mb-4 mt-6 text-lg">Team & Project Management:</p>
             <div className="text-sm flex flex-wrap gap-1">
               {ManagingItems.map((item) => (
                 <span key={item} className="hover:bg-blue-300 transition hover:text-neutral-800  bg-yellow-500/50 px-2 rounded-lg cursor-default">{item}</span>
