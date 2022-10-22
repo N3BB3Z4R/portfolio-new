@@ -1,4 +1,5 @@
 import NextSectionButton from 'src/components/NextSectionButton/NextSectionButton';
+import Skill from 'src/components/Skill/Skill';
 import Title from 'src/components/Title/Title';
 import { AboutMe, FrontItems, VideoItems, ThreeDeItems, ManagingItems } from 'src/constants/about'
 
@@ -17,26 +18,26 @@ const About = () => {
           <div className="">
             <p className="mb-4 mt-6 text-lg">Front End Developer & UI/UX Designer:</p>
             <div className="text-sm flex flex-wrap gap-1">
-              {FrontItems.map((item) => (
-                <span key={item} className="hover:bg-blue-300 transition hover:text-neutral-800 bg-yellow-500/50 px-2 rounded-lg cursor-default">{item}</span>
+              {FrontItems.map((item: string) => (
+                <Skill skill={item} key={item} />
               ))}
             </div>
             <p className="mb-4 mt-6 text-lg">Video Productor & Postproduction:</p>
             <div className="text-sm flex flex-wrap gap-1">
               {VideoItems.map((item) => (
-                <span key={item} className="hover:bg-blue-300 transition hover:text-neutral-800 bg-yellow-500/50 px-2 rounded-lg cursor-default">{item}</span>
+                <Skill skill={item} key={item} />
               ))}
             </div>
             <p className="mb-4 mt-6 text-lg">3D & Motion Graphics:</p>
             <div className="text-sm flex flex-wrap gap-1">
               {ThreeDeItems.map((item) => (
-                <span key={item} className="hover:bg-blue-300 transition hover:text-neutral-800 bg-yellow-500/50 px-2 rounded-lg cursor-default">{item}</span>
+                <Skill skill={item} key={item} />
               ))}
             </div>
             <p className="mb-4 mt-6 text-lg">Team & Project Management:</p>
             <div className="text-sm flex flex-wrap gap-1">
               {ManagingItems.map((item) => (
-                <span key={item} className="hover:bg-blue-300 transition hover:text-neutral-800  bg-yellow-500/50 px-2 rounded-lg cursor-default">{item}</span>
+                <Skill skill={item} key={item} />
               ))}
             </div>
           </div>
