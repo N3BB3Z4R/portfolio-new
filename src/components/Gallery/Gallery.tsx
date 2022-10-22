@@ -25,8 +25,7 @@ const Gallery = () => {
   }, [])
 
   const handleGallery = (gallerySelected: any) => {
-    // console.log(gallerySelected)
-    window.location.hash = 'Gallery'
+    window.location.hash = 'GalleryButtons'
     switch (gallerySelected) {
       case GalleryEnum.All:
         setButtonActive(GalleryEnum.All)
@@ -44,19 +43,15 @@ const Gallery = () => {
         setButtonActive(GalleryEnum.VideoVFX)
         setGalleryCollection(IMAGES_VIDEOVFX)
         break
-      // default:
-      //   setButtonActive(GalleryEnum.All)
-      //   setGalleryCollection([...IMAGES_3D, ...IMAGES_FRONTEND, ...IMAGES_VIDEOVFX])
-      //   break
     }
   }
 
   const ButtonWrapper = () => {
     return (
-      <div className="flex flex-wrap flex-col md:flex-row justify-center gap-4 p-2 my-6 w-2/4 md:w-3/4 lg:w-full">
+      <div id="GalleryButtons" className="flex flex-wrap flex-col md:flex-row justify-center gap-4 p-2 my-6 w-2/4 md:w-3/4 lg:w-full">
         {Object.values(GalleryEnum).map((value: string) => {
           return (
-            <button key={value} onClick={() => handleGallery(value)} className={`text-[#b1dddd] bg-gray-300/10 group hover:brightness-125 border-4 border-yellow-400 transition rounded-xl px-4 py-2 m-2 font-semibold relative ${buttonActive === value ? 'bg-yellow-400 text-neutral-800' : ''}`}>
+            <button key={value} onClick={() => handleGallery(value)} className={`text-[#b1dddd] bg-gray-300/10 group hover:brightness-125 border-4 border-yellow-400 transition rounded-xl flex justify-center px-4 py-2 mt-12 m-2 w-24 font-semibold relative ${buttonActive === value ? 'bg-yellow-400 text-neutral-800' : ''}`}>
               {value}
               <span className="absolute opacity-0 group-hover:opacity-100 transition left-[100%] top-[23%] w-8 h-6 bg-yellow-400 text-black rounded-r-lg">{galleriesCounter && galleriesCounter[value]}</span>
             </button>
@@ -74,7 +69,6 @@ const Gallery = () => {
           <iframe width={1920} height="400"
             className="opacity-100 rounded-xl backdrop-blur-sm"
             src="https://www.youtube.com/embed/9vXvKRxLn_c?autoplay=1&mute=1&playsinline=1&loop=1&controls=0&disablekb=1"
-            // src="https://www.youtube.com/embed/9vXvKRxLn_c?autoplay=1&mute=1&loop=1?controls=0"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Image from 'next/image'
 import Head from "next/head"
 import Header from "src/components/Header/Header";
 import WelcomeBlock from "src/components/WelcomeBlock/WelcomeBlock";
@@ -8,6 +9,7 @@ import Footer from "src/components/Footer/Footer";
 import Contact from "src/components/Contact/Contact";
 import Gallery from "src/components/Gallery/Gallery";
 import NextSectionButton from "src/components/NextSectionButton/NextSectionButton";
+import deathstar from "src/styles/deathstar.png";
 
 const Home: NextPage = () => {
   return (
@@ -18,11 +20,13 @@ const Home: NextPage = () => {
         <script async src="go-up.js" />
       </Head>
       <div className="main flex flex-col gap-4 h-full w-[90vw] lg:w-[70vw] xl:w-[60vw] mx-auto">
-        <span className="stars z-1" />
-        <span className="stars2 z-1" />
-        <span className="stars3 z-1" />
+        <div className="parallax overflow-hidden position relative">
+          <span className="stars z-1" />
+          <span className="stars2 z-1" />
+          <span className="stars3 z-1" />
+        </div>
         <Header />
-        <div className="z-10 h-[100vh] flex flex-col gap-4 justify-center items-center text-neutral-300 pb-[20vh]">
+        <div className="z-10 h-[100vh] flex flex-col gap-4 justify-center items-center text-neutral-300 pb-[20vh]" data-depth='1.00' data-type='parallax'>
           <WelcomeBlock />
           <SocialsBlock />
           <NextSectionButton text="m'kay, tell me more..." href="#About" />

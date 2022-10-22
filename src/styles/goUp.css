@@ -21,7 +21,7 @@
   white-space: nowrap;
 }
 #goUp a {
-  box-shadow: 0 0 0 5px var(--alter3);
+  box-shadow: 0 0 0 5px rgb(250, 204, 21);
   margin: 0 0 1rem 0;
   padding: 4px 10px;
   display: flex;

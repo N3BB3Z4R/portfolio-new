@@ -44,7 +44,6 @@ const About = () => {
         </div>
       </div>
       <NextSectionButton text="well, take me to the gallery..." href="#Gallery" />
-      {/* <a className="more w-full text-center" href="#Gallery">well, take me to the gallery...</a> */}
     </div>
   );
 }

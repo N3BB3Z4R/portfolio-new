@@ -13,6 +13,7 @@
   left: 4vw;
   width: 100%;
   will-change: transform;
+  background-position: bottom center;
 }
 
 /* html {
@@ -20,9 +21,13 @@
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
 } */
+.layer-1 {
+  background-position: left bottom;
+}
 
 #stars,
 .stars {
+  opacity: 0.5;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -394,6 +399,7 @@
 
 #stars2,
 .stars2 {
+  opacity: 0.65;
   width: 2px;
   height: 2px;
   background: transparent;
@@ -513,6 +519,7 @@
 
 #stars3,
 .stars3 {
+  opacity: 0.8;
   width: 3px;
   height: 3px;
   background: transparent;
