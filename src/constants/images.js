@@ -267,6 +267,20 @@ export const IMAGES_FRONTEND = [
         desc: 'A point & click SCUMM video game.',
     },
     {
+        path: '/images/works/g-managementapp.jpg',
+        bigpath: '/images/works/g-managementapp.jpg',
+        title: 'CRM Clubs Management',
+        category: 'HTML, SCSS, TS, React',
+        desc: 'A CRM app for Clubs Management and sell to client, adapted to Web and Tablets.',
+    },
+    {
+        path: '/images/works/g-cleaninglabscheduler.jpg',
+        bigpath: '/images/works/g-cleaninglabscheduler.jpg',
+        title: 'Cleaning Lab Scheduler',
+        category: 'HTML, SCSS, TS, React, Electron',
+        desc: 'A CRM to manage Cleaning and Calibration for Lab Facilities and Equipment, App for Desktop and Web.',
+    },
+    {
         path: '/images/works/web3.jpg',
         bigpath: '/images/works/web3.jpg',
         title: 'Personal Porfolios',
