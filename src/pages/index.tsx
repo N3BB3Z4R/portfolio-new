@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           <span className="stars3 z-1" />
         </div>
         <Header />
-        <div className="z-10 h-[100vh] flex flex-col gap-4 justify-center items-center text-neutral-300 pb-[20vh]" data-depth='1.00' data-type='parallax'>
+        <div className="z-10 h-[100vh] flex flex-col gap-4 justify-center items-center text-neutral-300 pb-[20vh]">
           <WelcomeBlock />
           <SocialsBlock />
           <NextSectionButton text="m'kay, tell me more..." href="#About" />
