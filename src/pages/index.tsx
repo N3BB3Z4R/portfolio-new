@@ -8,6 +8,7 @@ import Footer from "src/components/Footer/Footer";
 import Contact from "src/components/Contact/Contact";
 import Gallery from "src/components/Gallery/Gallery";
 import NextSectionButton from "src/components/NextSectionButton/NextSectionButton";
+import Script from "next/script";
 
 const Home: NextPage = () => {
   return (
@@ -15,8 +16,9 @@ const Home: NextPage = () => {
       <Head>
         <title>Oscar Abad - Portfolio</title>
         <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png"></link>
-        <script async src="go-up.js" />
+        {/* <script async src="go-up.js" /> */}
       </Head>
+      <Script src="go-up.js" />
       <div className="main flex flex-col gap-4 h-full w-[90vw] lg:w-[70vw] xl:w-[60vw] mx-auto">
         <div className="parallax overflow-hidden position relative">
           <span className="stars z-1" />
