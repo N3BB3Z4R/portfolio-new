@@ -6,13 +6,13 @@ import { AboutMe, FrontItems, VideoItems, ThreeDeItems, ManagingItems } from 'sr
 const About = () => {
   return (
     <div id="About" className="text-[#b1dddd] w-full bg-gray-300/20 py-10 px-6 lg:px-32 rounded-xl mx-auto flex flex-col xl:gap-16 justify-center items-center">
-      <div className="flex flex-col xl:flex-row xl:gap-16">
-        <div className="w-full xl:w-[40%]">
+      <div className="flex flex-col 2xl:flex-row xl:gap-16">
+        <div className="w-full 2xl:w-[40%]">
           <Title title="About" />
           <p>{AboutMe}</p>
         </div>
         <hr className="w-full block xl:hidden my-8 border-transparent" />
-        <div className="xl:w-[60%]">
+        <div className="2xl:w-[60%]">
           <Title title="Skills" />
           <h4>More than 20 years of experience on:</h4>
           <div className="">
