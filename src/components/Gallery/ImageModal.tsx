@@ -14,11 +14,11 @@ const ImageModal = (props: Props) => {
   return (
     <button
       onClick={() => close()}
-      className="fixed top-0 left-0 z-[52] flex h-full w-full flex-wrap items-center justify-center bg-black/50 backdrop-blur-md"
+      className="fixed top-0 left-0 z-[52] flex h-full w-full flex-wrap items-center justify-center bg-black/80 backdrop-blur-sm"
     >
       <div
-        className={`relative aspect-video rounded-xl h-[${window.innerHeight - 40
-          }px]`}
+        className={`relative aspect-video py-1 rounded-xl h-[${window.innerHeight - 2
+          }rem]`}
       >
         {!image.video ? (
           <>
@@ -47,7 +47,7 @@ const ImageModal = (props: Props) => {
             allowFullScreen
           ></iframe>
         )}
-        <div className="absolute -bottom-72 flex h-full w-full flex-col items-center justify-center ">
+        <div className="absolute bottom-0 flex h-full w-full flex-col items-center justify-end">
           <div className="mt-4 flex flex-col items-center justify-center rounded-xl bg-gradient-to-t from-black/80 to-black/60 p-4">
             <span className="text-2xl font-medium">{image.title}</span>
             <span className="flex gap-4">

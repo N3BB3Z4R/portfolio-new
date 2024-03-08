@@ -9,6 +9,7 @@ import Contact from "src/components/Contact/Contact";
 import Gallery from "src/components/Gallery/Gallery";
 import NextSectionButton from "src/components/NextSectionButton/NextSectionButton";
 import Script from "next/script";
+import GoUpButton from "src/components/GoUpButton/GoUpButton";
 
 const Home: NextPage = () => {
   return (
@@ -51,12 +52,8 @@ const Home: NextPage = () => {
         <Contact />
         <Gallery />
         <Footer />
-        <div id="goUp" className="z-10 flex justify-center lg:w-1">
-          <a className="" href="#">
-            &#8593;
-          </a>
-        </div>
-        <div className="h-2"></div>
+        <GoUpButton />
+        <div className="h-2">G</div>
       </div>
     </>
   );
